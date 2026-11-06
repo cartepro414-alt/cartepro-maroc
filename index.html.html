@@ -1,0 +1,2599 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Primary SEO Metadata (Dynamically updated on language switch) -->
+  <title id="meta-title">CartePro Maroc — Votre identité professionnelle, autrement | Carte de visite NFC, QR Code & Profil Digital</title>
+  <meta id="meta-desc" name="description" content="CartePro vous aide à présenter votre activité, partager vos informations et valoriser votre image au Maroc grâce à des solutions NFC, QR Code et profils digitaux personnalisés." />
+  <meta name="keywords" content="Carte de visite NFC, Carte NFC professionnelle, Carte de visite digitale, Profil digital professionnel, NFC Maroc, Carte NFC Maroc, NFC business card, Digital business card, Professional digital profile, بطاقة NFC المغرب, بطاقة زيارة رقمية, بطاقة أعمال ذكية, الملف المهني الرقمي" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#183A36" />
+
+  <!-- Open Graph / Social Sharing Metadata -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_MA" />
+  <meta property="og:locale:alternate" content="ar_MA" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta id="og-title" property="og:title" content="CartePro — Votre identité professionnelle, autrement." />
+  <meta id="og-desc" property="og:description" content="Bien plus qu’une carte de visite. Solutions professionnelles NFC, supports Table & Counter et profils digitaux personnalisés au Maroc." />
+  <meta property="og:site_name" content="CartePro" />
+
+  <!-- Embedded SVG Favicon (Official CartePro Card & NFC Wave Motif) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23183A36'/%3E%3Cg transform='translate(8, 14) rotate(-12 18 14)'%3E%3Crect x='2' y='4' width='30' height='20' rx='3.5' fill='none' stroke='%23E6C994' stroke-width='2.8'/%3E%3Cpath d='M4 15.5 L30 11.5 L30 16 L4 18.5 Z' fill='%23E6C994'/%3E%3C/g%3E%3Cpath d='M44 23 C46.5 26.5 46.5 31.5 44 35' fill='none' stroke='%23E6C994' stroke-width='2.5' stroke-linecap='round'/%3E%3Cpath d='M48.5 19.5 C52.5 25 52.5 33 48.5 38.5' fill='none' stroke='%23E6C994' stroke-width='2.5' stroke-linecap='round'/%3E%3Cpath d='M53 16 C58.5 23.5 58.5 34.5 53 42' fill='none' stroke='%23E6C994' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E" />
+
+  <!-- Google Fonts: Playfair Display (Headings), Plus Jakarta Sans (Body), Cairo (Arabic RTL) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              green: '#183A36',      /* Official Deep Green */
+              deep: '#0F2623',       /* Deeper Emerald Shade for Depth */
+              surface: '#1D4540',    /* Elevated Green Surface */
+              gold: '#E6C994',       /* Official Champagne Gold */
+              goldLight: '#F3E2BE',  /* Soft Highlight Gold */
+              goldDark: '#C8A568',   /* Deeper Metallic Gold */
+              ivory: '#F7F5F0',      /* Official Ivory */
+              ivoryWarm: '#EFECE4',  /* Secondary Ivory Card Surface */
+            }
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+            arabic: ['Cairo', 'sans-serif'],
+          },
+          boxShadow: {
+            'luxury': '0 20px 50px -12px rgba(15, 38, 35, 0.14)',
+            'luxury-dark': '0 25px 60px -15px rgba(0, 0, 0, 0.5)',
+            'gold-glow': '0 10px 30px -5px rgba(230, 201, 148, 0.25)',
+            'card-3d': '0 30px 60px -12px rgba(0, 0, 0, 0.55), 0 0 0 1px rgba(230, 201, 148, 0.35)',
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    /* ==========================================================================
+       CARTEPRO CUSTOM LUXURY STYLES & RTL ADAPTATION
+       ========================================================================== */
+    :root {
+      --brand-green: #183A36;
+      --brand-deep: #0F2623;
+      --brand-gold: #E6C994;
+      --brand-ivory: #F7F5F0;
+    }
+
+    body {
+      background-color: var(--brand-ivory);
+      color: var(--brand-green);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Typography switching for Arabic RTL */
+    html[dir="rtl"] body,
+    html[dir="rtl"] h1,
+    html[dir="rtl"] h2,
+    html[dir="rtl"] h3,
+    html[dir="rtl"] h4,
+    html[dir="rtl"] .font-serif,
+    html[dir="rtl"] .font-sans {
+      font-family: 'Cairo', sans-serif !important;
+      letter-spacing: 0 !important;
+    }
+
+    html[dir="rtl"] .rtl-flip {
+      transform: scaleX(-1);
+    }
+
+    /* Fixed Deep Green Background + Subtle Pattern (Prevents background-image conflict) */
+    .bg-luxury-green {
+      background-color: #183A36;
+      background-image:
+        radial-gradient(circle at 82% 22%, rgba(230, 201, 148, 0.14) 0%, transparent 45%),
+        radial-gradient(circle at 18% 80%, rgba(33, 78, 72, 0.9) 0%, #183A36 50%, #0F2623 100%);
+    }
+
+    .bg-arabesque-pattern {
+      background-color: #183A36;
+      background-image:
+        radial-gradient(rgba(230, 201, 148, 0.08) 1px, transparent 1px),
+        radial-gradient(rgba(230, 201, 148, 0.05) 1px, transparent 1px),
+        radial-gradient(circle at 78% 25%, #214E48 0%, #183A36 48%, #0C1F1C 100%);
+      background-size: 36px 36px, 36px 36px, 100% 100%;
+      background-position: 0 0, 18px 18px, 0 0;
+    }
+
+    /* Metallic Champagne Gold Gradients */
+    .bg-gold-gradient {
+      background: linear-gradient(135deg, #F5E6C8 0%, #E6C994 50%, #C8A161 100%);
+    }
+
+    .text-gold-gradient {
+      background: linear-gradient(135deg, #FAF0DC 0%, #E6C994 55%, #D4AF72 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .border-gold-subtle {
+      border-color: rgba(230, 201, 148, 0.25);
+    }
+
+    /* Ornamental Section Dividers */
+    .gold-ornament-line {
+      height: 1px;
+      width: 64px;
+      background: linear-gradient(90deg, transparent, #E6C994, transparent);
+    }
+
+    /* Realistic Physical NFC Card Mockup Styling (Inspired by Reference 3) */
+    .nfc-card-surface {
+      background: linear-gradient(140deg, #1F4B45 0%, #153531 50%, #0B1E1B 100%);
+      position: relative;
+      overflow: hidden;
+      box-shadow:
+        0 30px 60px -12px rgba(0, 0, 0, 0.65),
+        0 0 0 1.5px rgba(230, 201, 148, 0.48),
+        inset 0 1px 1px rgba(255, 255, 255, 0.15);
+    }
+
+    .nfc-card-surface::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23E6C994' stroke-width='0.65' stroke-opacity='0.11'%3E%3Cpath d='M60 0 L120 60 L60 120 L0 60 Z'/%3E%3Ccircle cx='60' cy='60' r='38'/%3E%3Ccircle cx='60' cy='60' r='20'/%3E%3Cpath d='M0 0 L120 120 M120 0 L0 120'/%3E%3C/g%3E%3C/svg%3E");
+      background-size: 88px 88px;
+      pointer-events: none;
+    }
+
+    /* Metallic Phone Bezel (Inspired by Reference 3) */
+    .phone-frame-luxury {
+      background: linear-gradient(145deg, #3A352C 0%, #151A19 40%, #0A0F0E 100%);
+      box-shadow:
+        0 35px 70px -15px rgba(0, 0, 0, 0.7),
+        0 0 0 2px rgba(230, 201, 148, 0.45),
+        inset 0 0 4px rgba(230, 201, 148, 0.25);
+    }
+
+    /* Smooth Card Float & Transitions */
+    @media (prefers-reduced-motion: no-preference) {
+      .hover-lift {
+        transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .hover-lift:hover {
+        transform: translateY(-5px);
+      }
+      @keyframes pulseRing {
+        0% { transform: scale(0.92); opacity: 0.8; }
+        70% { transform: scale(1.25); opacity: 0; }
+        100% { transform: scale(1.25); opacity: 0; }
+      }
+      .nfc-pulse::after {
+        content: '';
+        position: absolute;
+        inset: -6px;
+        border-radius: 9999px;
+        border: 1.5px solid #E6C994;
+        animation: pulseRing 2.6s infinite;
+      }
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0F2623;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #2C5E58;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #E6C994;
+    }
+  </style>
+</head>
+
+<body class="bg-brand-ivory text-brand-green selection:bg-brand-gold selection:text-brand-deep">
+
+  <!-- ==========================================================================
+       STICKY HEADER
+       Includes: Official CartePro Logo Asset, Navigation, Language Switcher, WhatsApp CTA
+       ========================================================================== -->
+  <header id="site-header" class="sticky top-0 z-50 bg-[#0F2623]/95 backdrop-blur-md border-b border-brand-gold/25 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20 sm:h-22 gap-4">
+        
+        <!-- Official CartePro Logo Asset (Preserves exact aspect ratio, never stretches, never flips in RTL, includes automatic vector fallback) -->
+        <a href="#accueil" dir="ltr" class="flex items-center shrink-0 py-2 focus:outline-none" aria-label="CartePro Accueil">
+          <img
+            src="logo-cartepro.png"
+            alt="CartePro — Votre identité professionnelle, autrement"
+            class="h-11 sm:h-13 w-auto max-w-[200px] sm:max-w-[230px] object-contain select-none"
+            onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');"
+          />
+          <svg class="hidden h-11 w-auto" viewBox="0 0 250 68" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="CartePro Logo">
+            <defs>
+              <linearGradient id="goldGradHeader" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#F5E6C8" />
+                <stop offset="50%" stop-color="#E6C994" />
+                <stop offset="100%" stop-color="#C69F5E" />
+              </linearGradient>
+            </defs>
+            <g transform="translate(6, 6)">
+              <g transform="rotate(-11 26 22)">
+                <rect x="4" y="8" width="42" height="27" rx="4.5" stroke="url(#goldGradHeader)" stroke-width="2.6" fill="#183A36" />
+                <path d="M6.5 23.5 L43.5 18 L43.5 24.5 L6.5 28 Z" fill="url(#goldGradHeader)" />
+              </g>
+              <path d="M53 15 C56.5 19.5 56.5 25.5 53 30" stroke="url(#goldGradHeader)" stroke-width="2.5" stroke-linecap="round" />
+              <path d="M58.5 11 C63.5 17.5 63.5 27.5 58.5 34" stroke="url(#goldGradHeader)" stroke-width="2.5" stroke-linecap="round" />
+              <path d="M64 7 C70.5 15.5 70.5 29.5 64 38" stroke="url(#goldGradHeader)" stroke-width="2.5" stroke-linecap="round" />
+            </g>
+            <text x="82" y="42" font-family="'Playfair Display', Georgia, serif" font-weight="700" font-style="italic" font-size="31" fill="#F7F5F0" letter-spacing="0.3">Carte<tspan fill="url(#goldGradHeader)">Pro</tspan></text>
+            <path d="M92 53 Q155 46 218 53 Q155 50.5 92 53 Z" fill="url(#goldGradHeader)" />
+          </svg>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-brand-ivory/90" aria-label="Navigation principale">
+          <a href="#accueil" data-i18n="nav_home" class="hover:text-brand-gold transition-colors py-1">Accueil</a>
+          <a href="#solutions" data-i18n="nav_solutions" class="hover:text-brand-gold transition-colors py-1">Nos solutions</a>
+          <a href="#pourquoi" data-i18n="nav_why" class="hover:text-brand-gold transition-colors py-1">Pourquoi CartePro ?</a>
+          <a href="#fonctionnement" data-i18n="nav_how" class="hover:text-brand-gold transition-colors py-1">Fonctionnement</a>
+          <a href="#personnalisation" data-i18n="nav_custom" class="hover:text-brand-gold transition-colors py-1">Sur-mesure</a>
+          <a href="#pour-qui" data-i18n="nav_who" class="hover:text-brand-gold transition-colors py-1">Pour qui ?</a>
+        </nav>
+
+        <!-- Actions: Language Selector & WhatsApp CTA -->
+        <div class="flex items-center gap-3 shrink-0">
+          
+          <!-- Functional 3-Language Switcher (FR / AR / EN) -->
+          <div class="inline-flex items-center bg-brand-green/95 border border-brand-gold/35 rounded-full p-1 text-xs font-semibold" role="group" aria-label="Sélecteur de langue">
+            <button type="button" onclick="setLanguage('fr')" data-lang-btn="fr" class="lang-btn px-2.5 py-1 rounded-full transition-all bg-brand-gold text-brand-deep shadow-sm">
+              FR
+            </button>
+            <button type="button" onclick="setLanguage('ar')" data-lang-btn="ar" class="lang-btn px-2.5 py-1 rounded-full transition-all text-brand-ivory/85 hover:text-brand-gold font-arabic">
+              العربية
+            </button>
+            <button type="button" onclick="setLanguage('en')" data-lang-btn="en" class="lang-btn px-2.5 py-1 rounded-full transition-all text-brand-ivory/85 hover:text-brand-gold">
+              EN
+            </button>
+          </div>
+
+          <!-- Header WhatsApp CTA -->
+          <a href="https://wa.me/212669256706" target="_blank" rel="noopener noreferrer" data-wa-context="general" class="hidden sm:inline-flex items-center gap-2 bg-gold-gradient hover:brightness-105 text-brand-deep font-bold text-xs sm:text-sm px-4 py-2.5 rounded-full shadow-gold-glow transition-all">
+            <svg class="w-4 h-4 shrink-0 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.625.846 5.059 2.284 7.033l-1.492 5.451 5.603-1.47c1.903 1.258 4.179 1.986 6.605 1.986 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/>
+            </svg>
+            <span>WhatsApp</span>
+          </a>
+
+          <!-- Mobile Hamburger Button -->
+          <button id="mobile-menu-btn" type="button" onclick="toggleMobileMenu()" class="lg:hidden inline-flex items-center justify-center p-2 rounded-lg text-brand-gold hover:bg-brand-green/60 focus:outline-none" aria-label="Menu">
+            <svg id="menu-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <svg id="menu-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-brand-deep border-t border-brand-gold/20 px-4 pt-3 pb-6 space-y-3">
+      <div class="flex flex-col space-y-2 text-brand-ivory text-base font-medium">
+        <a href="#accueil" onclick="closeMobileMenu()" data-i18n="nav_home" class="px-3 py-2 rounded-lg hover:bg-brand-green hover:text-brand-gold">Accueil</a>
+        <a href="#solutions" onclick="closeMobileMenu()" data-i18n="nav_solutions" class="px-3 py-2 rounded-lg hover:bg-brand-green hover:text-brand-gold">Nos solutions</a>
+        <a href="#pourquoi" onclick="closeMobileMenu()" data-i18n="nav_why" class="px-3 py-2 rounded-lg hover:bg-brand-green hover:text-brand-gold">Pourquoi CartePro ?</a>
+        <a href="#fonctionnement" onclick="closeMobileMenu()" data-i18n="nav_how" class="px-3 py-2 rounded-lg hover:bg-brand-green hover:text-brand-gold">Fonctionnement</a>
+        <a href="#personnalisation" onclick="closeMobileMenu()" data-i18n="nav_custom" class="px-3 py-2 rounded-lg hover:bg-brand-green hover:text-brand-gold">Sur-mesure</a>
+        <a href="#pour-qui" onclick="closeMobileMenu()" data-i18n="nav_who" class="px-3 py-2 rounded-lg hover:bg-brand-green hover:text-brand-gold">Pour qui ?</a>
+      </div>
+      <div class="pt-2">
+        <a href="https://wa.me/212669256706" target="_blank" rel="noopener noreferrer" data-wa-context="general" class="w-full flex items-center justify-center gap-2 bg-gold-gradient text-brand-deep font-bold py-3 px-5 rounded-full shadow-gold-glow">
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.625.846 5.059 2.284 7.033l-1.492 5.451 5.603-1.47c1.903 1.258 4.179 1.986 6.605 1.986 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/></svg>
+          <span data-i18n="hero_cta_primary">Nous contacter sur WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         SECTION 1 — HERO (REDESIGNED)
+         High-contrast Deep Green backdrop, readable Ivory typography, selective
+         Champagne Gold accents, visible Secondary CTA, and Reference 3 Product Stage
+         ========================================================================== -->
+    <section id="accueil" class="relative bg-arabesque-pattern text-brand-ivory overflow-hidden pt-10 pb-16 sm:py-20 lg:py-24 border-b border-brand-gold/25">
+      
+      <!-- Subtle Luxury Gold Wave Lines & Ambient Lighting -->
+      <div class="absolute top-1/4 right-1/4 w-96 h-96 bg-brand-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute bottom-10 left-10 w-80 h-80 bg-[#265952]/40 rounded-full blur-3xl pointer-events-none"></div>
+      <svg class="absolute inset-0 w-full h-full pointer-events-none opacity-20" viewBox="0 0 1440 800" fill="none" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M-100 680 C 320 460, 860 760, 1550 360" stroke="#E6C994" stroke-width="1.5" />
+        <path d="M-100 720 C 340 500, 880 800, 1550 400" stroke="#E6C994" stroke-width="0.8" stroke-dasharray="6 6" />
+        <path d="M880 -40 C 1100 210, 1300 90, 1520 310" stroke="#E6C994" stroke-width="1.2" />
+      </svg>
+
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+          
+          <!-- Column 1 (6 Cols): Clear, High-Contrast Headline, Explanation, CTAs & Benefits -->
+          <div class="lg:col-span-6 space-y-6 text-start z-10">
+            
+            <!-- Top Eyebrow Pill -->
+            <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-[#0F2623]/90 border border-brand-gold/45 text-brand-gold text-xs sm:text-sm font-semibold tracking-wide shadow-sm">
+              <span class="w-2 h-2 rounded-full bg-brand-gold animate-pulse"></span>
+              <span data-i18n="hero_pill">NFC • QR Code • Profil digital personnalisé</span>
+            </div>
+
+            <!-- Main Headline (Crisp Ivory + Champagne Gold Accent) -->
+            <h1 class="font-serif text-4xl sm:text-5xl xl:text-[3.5rem] font-bold leading-[1.14] tracking-tight text-white">
+              <span data-i18n="hero_title_1">Votre identité professionnelle,</span>
+              <span class="block mt-1.5 text-gold-gradient italic" data-i18n="hero_title_2">autrement.</span>
+            </h1>
+
+            <!-- Concise Lead Subtitle -->
+            <p class="text-lg sm:text-xl font-semibold text-brand-ivory leading-snug max-w-xl" data-i18n="hero_subtitle">
+              Bien plus qu’une carte de visite. Une nouvelle façon de présenter votre activité.
+            </p>
+
+            <!-- Supporting Explanation -->
+            <p class="text-sm sm:text-base text-brand-ivory/90 max-w-xl leading-relaxed" data-i18n="hero_desc">
+              CartePro vous aide à présenter votre activité, partager vos informations et valoriser votre image grâce à des solutions NFC, QR Code et profils digitaux personnalisés.
+            </p>
+
+            <!-- Primary WhatsApp CTA & High-Contrast Secondary CTA -->
+            <div class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+              <!-- Primary CTA: WhatsApp -->
+              <a href="https://wa.me/212669256706" target="_blank" rel="noopener noreferrer" data-wa-context="general" class="inline-flex items-center justify-center gap-3 bg-gold-gradient hover:brightness-105 text-[#0F2623] font-bold text-base px-7 py-4 rounded-full shadow-gold-glow transition-all transform hover:-translate-y-0.5">
+                <svg class="w-5 h-5 shrink-0 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.625.846 5.059 2.284 7.033l-1.492 5.451 5.603-1.47c1.903 1.258 4.179 1.986 6.605 1.986 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/>
+                </svg>
+                <span data-i18n="hero_cta_primary">Nous contacter sur WhatsApp</span>
+                <svg class="w-4 h-4 rtl-flip" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.3" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </a>
+
+              <!-- Secondary CTA: Clearly Visible Glass & Gold Button -->
+              <a href="#solutions" class="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-full bg-white/10 hover:bg-white/15 border-2 border-brand-gold/80 text-white font-semibold text-base shadow-lg backdrop-blur-sm transition-all transform hover:-translate-y-0.5">
+                <span data-i18n="hero_cta_secondary">Découvrir nos solutions</span>
+                <svg class="w-4 h-4 text-brand-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </a>
+            </div>
+
+            <!-- Supporting Benefits Strip (Inspired by Reference 3 Feature Cards) -->
+            <div class="pt-5 border-t border-brand-gold/25 grid grid-cols-1 sm:grid-cols-3 gap-3.5">
+              <!-- Benefit Pill 1 -->
+              <div class="flex items-center gap-3 p-3 rounded-2xl bg-[#0F2623]/75 border border-brand-gold/30">
+                <div class="w-9 h-9 rounded-xl bg-gold-gradient text-[#0F2623] flex items-center justify-center shrink-0 shadow-sm">
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                    <path d="M6 8.5c1.8 2 1.8 5 0 7M9.5 6c3 3.3 3 8.7 0 12M13 3.5c4.2 4.7 4.2 12.3 0 17" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-xs font-bold text-white leading-tight" data-i18n="hero_feat1_title">Technologie NFC</p>
+                  <p class="text-[11px] text-brand-ivory/75 leading-tight mt-0.5" data-i18n="hero_badge_1">Design 100% personnalisé</p>
+                </div>
+              </div>
+
+              <!-- Benefit Pill 2 -->
+              <div class="flex items-center gap-3 p-3 rounded-2xl bg-[#0F2623]/75 border border-brand-gold/30">
+                <div class="w-9 h-9 rounded-xl bg-gold-gradient text-[#0F2623] flex items-center justify-center shrink-0 shadow-sm">
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-xs font-bold text-white leading-tight" data-i18n="hero_feat2_title">QR Code intégré</p>
+                  <p class="text-[11px] text-brand-ivory/75 leading-tight mt-0.5" data-i18n="hero_badge_2">Sans application requise</p>
+                </div>
+              </div>
+
+              <!-- Benefit Pill 3 -->
+              <div class="flex items-center gap-3 p-3 rounded-2xl bg-[#0F2623]/75 border border-brand-gold/30">
+                <div class="w-9 h-9 rounded-xl bg-gold-gradient text-[#0F2623] flex items-center justify-center shrink-0 shadow-sm">
+                  <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="text-xs font-bold text-white leading-tight" data-i18n="hero_feat3_title">Profil sur-mesure</p>
+                  <p class="text-[11px] text-brand-ivory/75 leading-tight mt-0.5" data-i18n="hero_badge_3">Conçu pour le Maroc</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Column 2 (6 Cols): Reference 3 Product Showcase (NFC Card + Smartphone Digital Profile) -->
+          <div class="lg:col-span-6 relative flex items-center justify-center">
+            
+            <!-- Physical Hardware Stage kept in LTR coordinates so Card & Phone geometry never breaks in Arabic RTL -->
+            <div dir="ltr" class="relative w-full max-w-[540px] min-h-[450px] sm:min-h-[500px] flex items-center justify-center py-4">
+              
+              <!-- Warm Champagne Gold Studio Rim Glow Behind Products -->
+              <div class="absolute w-80 h-80 rounded-full bg-brand-gold/20 blur-3xl pointer-events-none"></div>
+
+              <!-- 1. SMARTPHONE DISPLAYING DIGITAL PROFILE (Right Side, Inspired by Reference 3) -->
+              <div class="relative z-10 ml-auto mr-2 sm:mr-6 w-[248px] sm:w-[272px] rounded-[42px] p-2.5 phone-frame-luxury transform rotate-2 hover:rotate-0 transition-transform duration-500">
+                
+                <!-- Top Speaker / Dynamic Island -->
+                <div class="flex items-center justify-between px-4 pt-1 pb-2 text-[10px] text-brand-ivory/80 font-semibold">
+                  <span>9:41</span>
+                  <div class="w-16 h-3.5 bg-black rounded-full"></div>
+                  <div class="flex items-center gap-1">
+                    <span class="w-2.5 h-2.5 rounded-full bg-brand-gold/80"></span>
+                  </div>
+                </div>
+
+                <!-- Smartphone Inner Screen -->
+                <div class="bg-gradient-to-b from-[#173A36] via-[#112B28] to-[#0B1D1B] rounded-[32px] p-4 border border-brand-gold/25 text-center relative overflow-hidden">
+                  
+                  <!-- Decorative Gold Wave Inside Phone Header -->
+                  <svg class="absolute top-0 left-0 w-full h-24 opacity-25 pointer-events-none" viewBox="0 0 260 90" fill="none">
+                    <path d="M-20 75 Q130 20 280 65" stroke="#E6C994" stroke-width="1.5"/>
+                  </svg>
+
+                  <!-- Top Brand / Avatar Header -->
+                  <div class="relative z-10 pt-1 pb-3 border-b border-brand-gold/20">
+                    <!-- Gold Avatar Circle (Matching Reference 3) -->
+                    <div class="w-12 h-12 rounded-full bg-gold-gradient p-0.5 mx-auto mb-2 shadow-md">
+                      <div class="w-full h-full rounded-full bg-[#112B28] flex items-center justify-center text-brand-gold">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/>
+                        </svg>
+                      </div>
+                    </div>
+                    <p class="font-semibold text-xs sm:text-sm text-white tracking-wide" data-i18n="mockup_phone_title">Votre Profil Professionnel</p>
+                    <p class="text-[10px] text-brand-gold mt-0.5" data-i18n="mockup_phone_sub">Profil Digital Personnalisé</p>
+                  </div>
+
+                  <!-- 5 Action Rows Inside Phone (Matching Reference 3: Appeler, WhatsApp, Email, Localisation, Site Web) -->
+                  <div class="mt-3 space-y-1.5 text-left">
+                    <!-- Row 1: Appeler -->
+                    <div class="flex items-center gap-3 px-3 py-2 rounded-xl bg-[#163834]/90 border border-brand-gold/25 text-xs text-white">
+                      <svg class="w-3.5 h-3.5 text-brand-gold shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.25 1.01l-2.2 2.2z"/></svg>
+                      <span data-i18n="mockup_row_call" class="font-medium truncate">Appeler</span>
+                    </div>
+
+                    <!-- Row 2: WhatsApp -->
+                    <div class="flex items-center gap-3 px-3 py-2 rounded-xl bg-[#163834]/90 border border-brand-gold/25 text-xs text-white">
+                      <svg class="w-3.5 h-3.5 text-brand-gold shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771z"/></svg>
+                      <span data-i18n="mockup_row_wa" class="font-medium truncate">WhatsApp</span>
+                    </div>
+
+                    <!-- Row 3: Email -->
+                    <div class="flex items-center gap-3 px-3 py-2 rounded-xl bg-[#163834]/90 border border-brand-gold/25 text-xs text-white">
+                      <svg class="w-3.5 h-3.5 text-brand-gold shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                      <span data-i18n="mockup_row_email" class="font-medium truncate">Email</span>
+                    </div>
+
+                    <!-- Row 4: Localisation -->
+                    <div class="flex items-center gap-3 px-3 py-2 rounded-xl bg-[#163834]/90 border border-brand-gold/25 text-xs text-white">
+                      <svg class="w-3.5 h-3.5 text-brand-gold shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"/></svg>
+                      <span data-i18n="mockup_row_location" class="font-medium truncate">Localisation</span>
+                    </div>
+
+                    <!-- Row 5: Site Web -->
+                    <div class="flex items-center gap-3 px-3 py-2 rounded-xl bg-[#163834]/90 border border-brand-gold/25 text-xs text-white">
+                      <svg class="w-3.5 h-3.5 text-brand-gold shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path stroke-linecap="round" d="M3.6 9h16.8M3.6 15h16.8M12 3a15 15 0 010 18M12 3a15 15 0 000 18"/></svg>
+                      <span data-i18n="mockup_row_website" class="font-medium truncate">Site Web</span>
+                    </div>
+                  </div>
+
+                  <!-- Gold Bottom Button inside Phone: Enregistrer le contact -->
+                  <div class="mt-3 py-2.5 px-3 rounded-xl bg-gold-gradient text-[#0F2623] font-bold text-xs flex items-center justify-center gap-1.5 shadow-md">
+                    <svg class="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"/>
+                    </svg>
+                    <span data-i18n="mockup_save_contact">Enregistrer le contact</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2. FOREGROUND LUXURY NFC BUSINESS CARD (Left/Bottom Overlap, Inspired by Reference 3) -->
+              <div class="absolute z-20 left-0 sm:left-2 bottom-4 sm:bottom-8 w-[285px] sm:w-[335px] aspect-[1.58/1] rounded-2xl nfc-card-surface transform -rotate-6 hover:rotate-0 transition-transform duration-500 p-5 flex flex-col justify-between">
+                
+                <!-- Subtle Gold Top/Bottom Luxury Waves on Card -->
+                <svg class="absolute top-0 left-0 w-40 h-20 opacity-35 pointer-events-none" viewBox="0 0 160 80" fill="none">
+                  <path d="M0 45 Q60 15 140 0" stroke="#E6C994" stroke-width="1.5"/>
+                  <path d="M0 60 Q70 25 160 0" stroke="#E6C994" stroke-width="0.9"/>
+                </svg>
+
+                <!-- Top Row: Demonstration Badge & Gold NFC Waves -->
+                <div class="relative z-10 flex items-start justify-between">
+                  <span class="text-[9px] uppercase tracking-wider font-semibold px-2.5 py-0.5 rounded-full bg-[#0F2623]/85 text-brand-gold border border-brand-gold/40" data-i18n="demo_mockup_badge">
+                    Maquette de démonstration
+                  </span>
+                  <div class="text-right">
+                    <svg class="w-7 h-7 text-brand-gold ml-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                      <path d="M6 8.5c1.8 2 1.8 5 0 7M9.5 6c3 3.3 3 8.7 0 12M13 3.5c4.2 4.7 4.2 12.3 0 17" stroke-linecap="round"/>
+                    </svg>
+                    <span class="block text-[10px] font-extrabold tracking-widest text-brand-gold leading-none">NFC</span>
+                  </div>
+                </div>
+
+                <!-- Center Left: Official CartePro Emblem & Slogan -->
+                <div class="relative z-10 my-auto pr-24 text-left">
+                  <img
+                    src="logo-cartepro.png"
+                    alt="CartePro"
+                    class="h-10 sm:h-11 w-auto object-contain mb-1"
+                    onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');"
+                  />
+                  <!-- Fallback vector mark if local logo image is not yet placed -->
+                  <div class="hidden">
+                    <div class="font-serif italic font-bold text-2xl text-white leading-none">
+                      Carte<span class="text-brand-gold">Pro</span>
+                    </div>
+                  </div>
+                  <p class="text-[10px] sm:text-[11px] text-brand-ivory/90 font-medium leading-tight mt-1" data-i18n="brand_slogan">
+                    Votre identité professionnelle, autrement.
+                  </p>
+                </div>
+
+                <!-- Bottom Gold Swoop Line -->
+                <div class="relative z-10 w-36 h-[2px] bg-gradient-to-r from-brand-gold via-brand-goldLight to-transparent rounded-full"></div>
+
+                <!-- Bottom-Right Champagne Gold Corner with Crisp QR Code (Matching Reference 3) -->
+                <div class="absolute -bottom-1 -right-1 w-28 sm:w-32 h-24 sm:h-28 bg-gold-gradient rounded-tl-[42px] rounded-br-2xl p-2.5 flex items-end justify-end shadow-inner border-t border-l border-white/30">
+                  <div class="bg-white p-1.5 rounded-lg shadow-md border border-[#0F2623]/20">
+                    <svg class="w-13 h-13 sm:w-14 sm:h-14 text-[#0F2623]" viewBox="0 0 36 36" fill="currentColor" aria-label="QR Code">
+                      <path d="M2 2h10v10H2V2zm2 2v6h6V4H4zm2 2h2v2H6V6zm18-4h10v10H24V2zm2 2v6h6V4h-6zm2 2h2v2h-2V6zM2 24h10v10H2V24zm2 2v6h6v-6H4zm2 2h2v2H6v-2zm10-20h2v4h-2V4zm4 2h2v4h-2V6zm-4 6h4v2h-4v-2zm-2 4h4v4h-4v-4zm6 0h4v2h-4v-2zm-12 2h4v2H4v-2zm6 0h2v4h-2v-4zm12-2h2v4h-2v-4zm4 2h6v2h-6v-2zm-8 4h4v6h-4v-6zm6 2h4v4h-4v-4zm4 4h4v6h-4v-6zm-14 2h4v4h-4v-4zm6 2h2v4h-2v-4z"/>
+                    </svg>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 2 — NOS SOLUTIONS (THE 3 OFFICIAL PRODUCT LINES)
+         1. CartePro Business
+         2. CartePro Table & Counter
+         3. CartePro Digital
+         ========================================================================== -->
+    <section id="solutions" class="py-20 lg:py-28 bg-brand-ivory relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="inline-flex items-center gap-3 mb-3">
+            <span class="gold-ornament-line"></span>
+            <span class="text-xs font-bold uppercase tracking-[0.2em] text-brand-goldDark" data-i18n="solutions_eyebrow">Gamme Officielle</span>
+            <span class="gold-ornament-line"></span>
+          </div>
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-brand-green" data-i18n="solutions_title">
+            Nos solutions
+          </h2>
+          <p class="mt-4 text-base sm:text-lg text-brand-green/80 leading-relaxed" data-i18n="solutions_subtitle">
+            Trois solutions complémentaires conçues pour s’adapter à votre métier, votre identité visuelle et vos besoins d’échange professionnel.
+          </p>
+        </div>
+
+        <!-- Three Official Product Cards -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+          
+          <!-- PRODUCT 1: CartePro Business -->
+          <article class="bg-white rounded-3xl border border-brand-gold/35 shadow-luxury hover-lift flex flex-col overflow-hidden group">
+            <!-- Visual Mockup Area -->
+            <div class="relative h-64 bg-luxury-green p-6 flex items-center justify-center overflow-hidden">
+              <!-- 
+                REPLACEABLE PRODUCT 1 IMAGE HOOK:
+                <img src="assets/cartepro-business.jpg" alt="CartePro Business" class="w-full h-full object-cover" />
+              -->
+              <div class="absolute inset-0 bg-arabesque-pattern opacity-40"></div>
+              
+              <!-- Realistic Custom PVC NFC Card Mockup -->
+              <div class="relative z-10 w-64 aspect-[1.58/1] rounded-xl nfc-card-surface shadow-card-3d p-4 flex flex-col justify-between transform group-hover:scale-105 transition-transform duration-500">
+                <div class="flex justify-between items-start">
+                  <span class="text-[9px] text-brand-gold/90 border border-brand-gold/30 px-2 py-0.5 rounded bg-brand-deep/70" data-i18n="prod1_mockup_tag">Votre Logo & Marque</span>
+                  <div class="text-end">
+                    <svg class="w-5 h-5 text-brand-gold ms-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 8.5c1.8 2 1.8 5 0 7M9.5 6c3 3.3 3 8.7 0 12M13 3.5c4.2 4.7 4.2 12.3 0 17" stroke-linecap="round"/></svg>
+                    <span class="text-[8px] font-bold text-brand-gold block">NFC</span>
+                  </div>
+                </div>
+                <div class="pe-12">
+                  <p class="font-serif italic font-bold text-lg text-brand-ivory">Carte<span class="text-brand-gold">Pro</span></p>
+                  <p class="text-[9px] text-brand-ivory/75" data-i18n="prod1_mockup_sub">Design personnalisé à votre image</p>
+                </div>
+                <div class="absolute bottom-0 right-0 w-20 h-16 bg-gold-gradient rounded-tl-2xl p-1.5 flex items-end justify-end">
+                  <div class="bg-white p-1 rounded">
+                    <svg class="w-9 h-9 text-brand-deep" viewBox="0 0 36 36" fill="currentColor"><path d="M2 2h10v10H2V2zm2 2v6h6V4H4zm2 2h2v2H6V6zm18-4h10v10H24V2zm2 2v6h6V4h-6zm2 2h2v2h-2V6zM2 24h10v10H2V24zm2 2v6h6v-6H4zm2 2h2v2H6v-2zm10-12h4v4h-4v-4zm6 4h4v6h-4v-6zm-6 6h4v4h-4v-4z"/></svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product Content -->
+            <div class="p-7 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between gap-2 mb-3">
+                  <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-brand-ivoryWarm text-brand-green border border-brand-gold/40" data-i18n="prod1_badge">
+                    Carte Physique + Digital
+                  </span>
+                </div>
+
+                <h3 class="font-serif text-2xl font-bold text-brand-green">
+                  CartePro <span class="text-brand-goldDark italic">Business</span>
+                </h3>
+
+                <p class="mt-3 text-sm text-brand-green/80 leading-relaxed" data-i18n="prod1_desc">
+                  Une solution complète de carte de visite professionnelle en PVC personnalisé, intégrant la technologie NFC, un QR Code et votre profil digital sur-mesure.
+                </p>
+
+                <!-- Main Benefit Highlight -->
+                <div class="mt-4 p-3.5 rounded-2xl bg-brand-ivory border border-brand-gold/30">
+                  <p class="text-xs font-bold uppercase tracking-wider text-brand-goldDark mb-1" data-i18n="benefit_label">Bénéfice principal</p>
+                  <p class="text-xs sm:text-sm font-medium text-brand-green" data-i18n="prod1_benefit">
+                    Partagez instantanément vos coordonnées et valorisez votre propre identité visuelle à chaque rencontre.
+                  </p>
+                </div>
+
+                <!-- Feature List -->
+                <ul class="mt-5 space-y-2.5 text-sm text-brand-green/85">
+                  <li class="flex items-start gap-2.5">
+                    <svg class="w-4 h-4 text-brand-goldDark shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                    <span data-i18n="prod1_feat_1">Carte de visite PVC personnalisée à votre marque</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <svg class="w-4 h-4 text-brand-goldDark shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                    <span data-i18n="prod1_feat_2">Technologie sans contact NFC & QR Code intégré</span>
+                  </li>
+                  <li class="flex items-start gap-2.5">
+                    <svg class="w-4 h-4 text-brand-goldDark shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                    <span data-i18n="prod1_feat_3">Profil digital professionnel personnalisé</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- CTAs -->
+              <div class="mt-7 pt-5 border-t border-brand-ivoryWarm flex flex-col gap-2.5">
+                <a href="https://wa.me/212669256706" target="_blank" rel="noopener noreferrer" data-wa-context="business" class="w-full inline-flex items-center justify-center gap-2 bg-brand-green hover:bg-brand-deep text-brand-ivory font-semibold text-sm py-3.5 px-5 rounded-full transition-all shadow-sm">
+                  <span data-i18n="prod_cta_info">Demander des informations</span>
+                  <svg class="w-4 h-4 text-brand-gold rtl-flip" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                </a>
+                <button type="button" onclick="openProductModal('business')" class="w-full inline-flex items-center justify-center gap-1.5 text-xs font-semibold text-brand-green/80 hover:text-brand-green py-2">
+                  <span data-i18n="prod_cta_preview">Découvrir la solution en détail</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PRODUCT 2: CartePro Table & Counter -->
+          <article class="bg-white rounded-3xl border-2 border-brand-gold/60 shadow-luxury hover-lift flex flex-col overflow-hidden group relative">
+            <!-- Visual Mockup Area -->
+            <div class="relative h-64 bg-luxury-green p-6 flex items-center justify-center overflow-hidden">
+              <!-- 
+                REPLACEABLE PRODUCT 2 IMAGE HOOK:
+                <img src="assets/cartepro-table-counter.jpg" alt="CartePro Table & Counter" class="w-full h-full object-cover" />
+              -->
+              <div class="absolute inset-0 bg-arabesque-pattern opacity-40"></div>
+
+              <!-- Realistic Acrylic & Gold NFC Table Stand Mockup (Matching Reference 4) -->
+              <div class="relative z-10 flex items-end justify-center transform group-hover:scale-105 transition-transform duration-500">
+                <!-- Back A-Frame Wing -->
+                <div class="w-10 h-44 bg-gradient-to-b from-brand-goldDark to-[#7E602C] rounded-l-lg transform -skew-y-12 translate-x-3 opacity-90 shadow-lg"></div>
+                <!-- Main Acrylic & Emerald Stand Face -->
+                <div class="w-44 h-48 bg-gradient-to-b from-[#1A403B] to-[#0E2421] rounded-xl border-2 border-brand-gold/70 shadow-card-3d p-3.5 flex flex-col items-center justify-between text-center">
+                  <div class="w-full flex items-center justify-between text-[8px] text-brand-gold/80">
+                    <span>NFC</span>
+                    <span data-i18n="prod2_mockup_brand">Votre Établissement</span>
+                    <span>QR</span>
+                  </div>
+                  <div>
+                    <!-- Cloche / Hospitality Icon -->
+                    <svg class="w-6 h-6 text-brand-gold mx-auto mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 6V4m0 2a8 8 0 00-8 8h16a8 8 0 00-8-8zM3 16h18"/></svg>
+                    <p class="font-serif font-bold text-xs text-brand-ivory" data-i18n="prod2_mockup_title">Menu & Informations</p>
+                    <p class="text-[8px] text-brand-gold/85 mt-0.5" data-i18n="prod2_mockup_sub">Wi-Fi • Contact • Liens</p>
+                  </div>
+                  <div class="bg-white p-1.5 rounded-lg shadow-sm">
+                    <svg class="w-11 h-11 text-brand-deep" viewBox="0 0 36 36" fill="currentColor"><path d="M2 2h10v10H2V2zm2 2v6h6V4H4zm2 2h2v2H6V6zm18-4h10v10H24V2zm2 2v6h6V4h-6zm2 2h2v2h-2V6zM2 24h10v10H2V24zm2 2v6h6v-6H4zm2 2h2v2H6v-2zm12-10h8v8h-8v-8zm2 2v4h4v-4h-4z"/></svg>
+                  </div>
+                  <div class="w-full flex justify-around pt-1 border-t border-brand-gold/20 text-[7px] text-brand-gold">
+                    <span>((( NFC )))</span>
+                    <span>SCAN QR</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product Content -->
+            <div class="p-7 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between gap-2 mb-3">
+                  <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-brand-gold/25 text-brand-deep border border-brand-gold" data-i18n="prod2_badge">
+                    Tables, Comptoirs & Accueil
+                  </span>
+                </div>
+
+                <h3 class="font-serif text-2xl font-bold text-brand-green">
+                  CartePro <span class="text-brand-goldDark italic">Table & Counter</span>
+                </h3>
+
+                <p class="mt-3 text-sm text-brand-green/80 leading-relaxed" data-i18n="prod2_desc">
+                  Supports NFC et QR Code personnalisés conçus pour les restaurants, cafés, hôtels, commerces, comptoirs professionnels et espaces d’accueil.
+                </p>
+
+                <!-- Main Benefit Highlight -->
+                <div class="mt-4 p-3.5 rounded-2xl bg-brand-ivory border border-brand-gold/30">
+                  <p class="text-xs font-bold uppercase tracking-wider text-brand-goldDark mb-1" data-i18n="benefit_label">Bénéfice principal</p>
+                  <p class="text-xs sm:text-sm font-medium text-brand-green" data-i18n="prod2_benefit">
+                    Offrez à vos clients et visiteurs un accès immédiat à vos informations utiles directement sur table ou au comptoir.
+                  </p>
+                </div>
+
+                <!-- Examples of Possible Customized Uses (Strictly framed as examples per guidelines) -->
+                <div class="mt-5">
+                  <p class="text-xs font-semibold text-brand-green/70 uppercase tracking-wider mb-2" data-i18n="prod2_examples_title">
+                    Exemples d’utilisations personnalisables :
+                  </p>
+                  <ul class="space-y-2 text-sm text-brand-green/85">
+                    <li class="flex items-start gap-2.5">
+                      <svg class="w-4 h-4 text-brand-goldDark shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                      <span data-i18n="prod2_feat_1">Menu digital ou catalogue de prestations</span>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                      <svg class="w-4 h-4 text-brand-goldDark shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                      <span data-i18n="prod2_feat_2">Informations Wi-Fi, horaires et coordonnées</span>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                      <svg class="w-4 h-4 text-brand-goldDark shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                      <span data-i18n="prod2_feat_3">Informations de l’établissement et liens utiles aux clients</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- CTAs -->
+              <div class="mt-7 pt-5 border-t border-brand-ivoryWarm flex flex-col gap-2.5">
+                <a href="https://wa.me/212669256706" target="_blank" rel="noopener noreferrer" data-wa-context="table" class="w-full inline-flex items-center justify-center gap-2 bg-gold-gradient hover:brightness-105 text-brand-deep font-bold text-sm py-3.5 px-5 rounded-full transition-all shadow-gold-glow">
+                  <span data-i18n="prod_cta_info">Demander des informations</span>
+                  <svg class="w-4 h-4 rtl-flip" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                </a>
+                <button type="button" onclick="openProductModal('table')" class="w-full inline-flex items-center justify-center gap-1.5 text-xs font-semibold text-brand-green/80 hover:text-brand-green py-2">
+                  <span data-i18n="prod_cta_preview">Découvrir la solution en détail</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PRODUCT 3: CartePro Digital -->
+          <article class="bg-white rounded-3xl border border-brand-gold/35 shadow-luxury hover-lift flex flex-col overflow-hidden group">
+            <!-- Visual Mockup Area -->
+            <div class="relative h-64 bg-luxury-green p-6 flex items-center justify-center overflow-hidden">
+              <!-- 
+                REPLACEABLE PRODUCT 3 IMAGE HOOK:
+                <img src="assets/cartepro-digital.jpg" alt="CartePro Digital" class="w-full h-full object-cover" />
+              -->
+              <div class="absolute inset-0 bg-arabesque-pattern opacity-40"></div>
+
+              <!-- Realistic Laptop + Smartphone Digital Profile Mockup (Matching Reference 5) -->
+              <div class="relative z-10 flex items-end justify-center transform group-hover:scale-105 transition-transform duration-500">
+                <!-- Laptop Screen -->
+                <div class="w-52 bg-[#0B1C1A] rounded-t-xl p-2 border-2 border-brand-gold/40 shadow-card-3d">
+                  <div class="bg-gradient-to-br from-[#183A36] to-[#0E2421] rounded-lg p-3 border border-brand-gold/20">
+                    <div class="flex items-center justify-between mb-2 pb-1.5 border-b border-brand-gold/15">
+                      <span class="font-serif italic text-[11px] font-bold text-brand-ivory">Carte<span class="text-brand-gold">Pro</span></span>
+                      <span class="text-[8px] px-1.5 py-0.5 rounded bg-brand-gold/20 text-brand-gold">100% Digital</span>
+                    </div>
+                    <div class="grid grid-cols-12 gap-2 items-center">
+                      <div class="col-span-7 space-y-1.5 text-start">
+                        <div class="h-2 w-20 bg-brand-gold/70 rounded"></div>
+                        <div class="h-1.5 w-24 bg-brand-ivory/40 rounded"></div>
+                        <div class="grid grid-cols-2 gap-1 pt-1">
+                          <div class="h-4 rounded bg-brand-deep/80 border border-brand-gold/30"></div>
+                          <div class="h-4 rounded bg-brand-deep/80 border border-brand-gold/30"></div>
+                        </div>
+                        <div class="h-4 w-full rounded bg-gold-gradient"></div>
+                      </div>
+                      <div class="col-span-5 bg-brand-ivory rounded-md p-1.5 text-center">
+                        <div class="w-5 h-5 rounded-full bg-brand-gold/40 mx-auto mb-1"></div>
+                        <div class="h-1.5 w-10 bg-brand-green/60 rounded mx-auto mb-1"></div>
+                        <div class="h-1 w-12 bg-brand-green/30 rounded mx-auto"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Laptop Base -->
+                <div class="absolute -bottom-2 w-60 h-2.5 bg-gradient-to-r from-gray-400 via-gray-200 to-gray-400 rounded-b-lg shadow"></div>
+
+                <!-- Overlapping Mini Smartphone -->
+                <div class="absolute -right-3 -bottom-2 w-20 bg-[#0B1C1A] rounded-2xl p-1 border border-brand-gold/50 shadow-xl">
+                  <div class="bg-[#183A36] rounded-xl p-2 text-center space-y-1">
+                    <div class="w-5 h-5 rounded-full bg-brand-gold/30 border border-brand-gold mx-auto"></div>
+                    <div class="h-1.5 w-12 bg-brand-ivory/80 rounded mx-auto"></div>
+                    <div class="h-2.5 w-full rounded bg-brand-deep border border-brand-gold/30"></div>
+                    <div class="h-2.5 w-full rounded bg-brand-deep border border-brand-gold/30"></div>
+                    <div class="h-2.5 w-full rounded bg-gold-gradient"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product Content -->
+            <div class="p-7 flex-1 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between gap-2 mb-3">
+                  <span class="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-brand-ivoryWarm text-brand-green border border-brand-gold/40" data-i18n="prod3_badge">
+                    Sans Support Physique
+                  </span>
+                </div>
+
+                <h3 class="font-serif text-2xl font-bold text-brand-green">
+                  CartePro <span class="text-brand-goldDark italic">Digital</span>
+                </h3>
+
+                <p class="mt-3 text-sm text-brand-green/80 leading-relaxed" data-i18n="prod3_desc">
+                  Un profil professionnel digital personnalisé et autonome, accessible via un lien dédié ou QR Code, sans carte PVC ni support NFC physique.
+                </p>
+
+                <!-- Main Benefit Highlight -->
+                <div class="mt-4 p-3.5 rounded-2xl bg-brand-ivory border border-brand-gold/30">
+                  <p class="text-xs font-bold uppercase tracking-wider text-brand-goldDark mb-1" data-i18n="benefit_label">Bénéfice principal</p>
+                  <p class="text-xs sm:text-sm font-medium text-brand-green" data-i18n="prod3_benefit">
+                    Disposez d’une présentation digitale élégante à partager en ligne (WhatsApp, signatures, réseaux) selon vos besoins.
+                  </p>
+                </div>
+
+                <!-- Possible Content List (Framed accurately per guidelines) -->
+                <div class="mt-5">
+                  <p class="text-xs font-semibold text-brand-green/70 uppercase tracking-wider mb-2" data-i18n="prod3_examples_title">
+                    Contenus adaptables selon vos besoins :
+                  </p>
+                  <ul class="space-y-2 text-sm text-brand-green/85">
+                    <li class="flex items-start gap-2.5">
+                      <svg class="w-4 h-4 text-brand-goldDark shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                      <span data-i18n="prod3_feat_1">Présentation de votre activité et de vos services</span>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                      <svg class="w-4 h-4 text-brand-goldDark shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                      <span data-i18n="prod3_feat_2">Coordonnées professionnelles et prise de contact</span>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                      <svg class="w-4 h-4 text-brand-goldDark shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+                      <span data-i18n="prod3_feat_3">Liens utiles et informations pratiques centralisées</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- CTAs -->
+              <div class="mt-7 pt-5 border-t border-brand-ivoryWarm flex flex-col gap-2.5">
+                <a href="https://wa.me/212669256706" target="_blank" rel="noopener noreferrer" data-wa-context="digital" class="w-full inline-flex items-center justify-center gap-2 bg-brand-green hover:bg-brand-deep text-brand-ivory font-semibold text-sm py-3.5 px-5 rounded-full transition-all shadow-sm">
+                  <span data-i18n="prod_cta_info">Demander des informations</span>
+                  <svg class="w-4 h-4 text-brand-gold rtl-flip" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                </a>
+                <button type="button" onclick="openProductModal('digital')" class="w-full inline-flex items-center justify-center gap-1.5 text-xs font-semibold text-brand-green/80 hover:text-brand-green py-2">
+                  <span data-i18n="prod_cta_preview">Découvrir la solution en détail</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 3 — POURQUOI CARTEPRO ? (VALUE PROPOSITION)
+         Editorial asymmetric layout with meaningful visual hierarchy
+         ========================================================================== -->
+    <section id="pourquoi" class="py-20 lg:py-28 bg-brand-ivoryWarm border-y border-brand-gold/25">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          
+          <!-- Left Column: Core Value Proposition Editorial -->
+          <div class="lg:col-span-5 lg:sticky lg:top-28 space-y-6">
+            <div class="inline-flex items-center gap-3">
+              <span class="w-8 h-[1.5px] bg-brand-goldDark"></span>
+              <span class="text-xs font-bold uppercase tracking-[0.2em] text-brand-goldDark" data-i18n="why_eyebrow">Valeur Ajoutée</span>
+            </div>
+
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-green leading-tight" data-i18n="why_title">
+              Pourquoi choisir CartePro ?
+            </h2>
+
+            <!-- Official Main Value Message -->
+            <blockquote class="p-6 rounded-2xl bg-brand-green text-brand-ivory border-s-4 border-brand-gold shadow-luxury space-y-2">
+              <p class="font-serif italic text-lg sm:text-xl text-brand-goldLight leading-snug" data-i18n="why_main_msg">
+                « Bien plus qu’une carte de visite. Une nouvelle façon de présenter votre activité. »
+              </p>
+              <p class="text-xs sm:text-sm text-brand-ivory/80 pt-1" data-i18n="why_support_msg">
+                Une image professionnelle plus forte. Un partage plus simple. Une présence digitale adaptée à votre activité.
+              </p>
+            </blockquote>
+
+            <p class="text-sm sm:text-base text-brand-green/80 leading-relaxed" data-i18n="why_editorial_body">
+              CartePro ne se limite pas à un support technologique. Nous concevons une expérience professionnelle cohérente qui associe l’élégance d’un support physique ou digital à la simplicité d’accès sur smartphone.
+            </p>
+
+            <div class="pt-2">
+              <a href="https://wa.me/212669256706" target="_blank" rel="noopener noreferrer" data-wa-context="general" class="inline-flex items-center gap-2.5 text-sm font-bold text-brand-green hover:text-brand-goldDark transition-colors group">
+                <span data-i18n="why_cta_link">Échanger avec notre équipe sur WhatsApp</span>
+                <span class="w-7 h-7 rounded-full bg-brand-green text-brand-gold flex items-center justify-center group-hover:translate-x-1 transition-transform rtl-flip">→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Sophisticated 5-Benefit Asymmetric Bento Composition -->
+          <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
+            
+            <!-- Benefit 1 (Featured Wide Card) -->
+            <div class="sm:col-span-2 bg-white rounded-3xl p-7 sm:p-8 border border-brand-gold/35 shadow-sm flex flex-col sm:flex-row items-start sm:items-center gap-6">
+              <div class="w-16 h-16 rounded-2xl bg-brand-green text-brand-gold flex items-center justify-center shrink-0 shadow-md border border-brand-gold/30">
+                <!-- Diamond / Valorisation Icon -->
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M12 3l8 6-8 12L4 9l8-6zm-8 6h16M8.5 3L7 9l5 12 5-12-1.5-6"/></svg>
+              </div>
+              <div>
+                <span class="text-[11px] font-bold uppercase tracking-widest text-brand-goldDark">01</span>
+                <h3 class="font-serif text-xl font-bold text-brand-green mt-0.5" data-i18n="why_b1_title">
+                  Une image professionnelle valorisée
+                </h3>
+                <p class="mt-2 text-sm text-brand-green/80 leading-relaxed" data-i18n="why_b1_desc">
+                  Soignez la première impression auprès de vos interlocuteurs avec une présentation moderne, élégante et fidèle à l’identité de votre activité.
+                </p>
+              </div>
+            </div>
+
+            <!-- Benefit 2 -->
+            <div class="bg-white rounded-3xl p-7 border border-brand-gold/35 shadow-sm flex flex-col justify-between">
+              <div class="w-12 h-12 rounded-xl bg-brand-green text-brand-gold flex items-center justify-center mb-5 border border-brand-gold/30">
+                <!-- Fast Share / NFC Icon -->
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+              </div>
+              <div>
+                <span class="text-[11px] font-bold uppercase tracking-widest text-brand-goldDark">02</span>
+                <h3 class="font-serif text-xl font-bold text-brand-green mt-0.5" data-i18n="why_b2_title">
+                  Un partage simple et rapide
+                </h3>
+                <p class="mt-2 text-sm text-brand-green/80 leading-relaxed" data-i18n="why_b2_desc">
+                  Un simple rapprochement NFC ou un scan QR Code suffit pour transmettre vos coordonnées, sans saisie manuelle ni application dédiée.
+                </p>
+              </div>
+            </div>
+
+            <!-- Benefit 3 -->
+            <div class="bg-white rounded-3xl p-7 border border-brand-gold/35 shadow-sm flex flex-col justify-between">
+              <div class="w-12 h-12 rounded-xl bg-brand-green text-brand-gold flex items-center justify-center mb-5 border border-brand-gold/30">
+                <!-- Centralized Layers Icon -->
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+              </div>
+              <div>
+                <span class="text-[11px] font-bold uppercase tracking-widest text-brand-goldDark">03</span>
+                <h3 class="font-serif text-xl font-bold text-brand-green mt-0.5" data-i18n="why_b3_title">
+                  Des informations centralisées
+                </h3>
+                <p class="mt-2 text-sm text-brand-green/80 leading-relaxed" data-i18n="why_b3_desc">
+                  Regroupez sur un seul espace clair vos coordonnées, votre présentation, vos horaires, votre localisation et vos liens professionnels.
+                </p>
+              </div>
+            </div>
+
+            <!-- Benefit 4 -->
+            <div class="bg-white rounded-3xl p-7 border border-brand-gold/35 shadow-sm flex flex-col justify-between">
+              <div class="w-12 h-12 rounded-xl bg-brand-green text-brand-gold flex items-center justify-center mb-5 border border-brand-gold/30">
+                <!-- Sliders / Personalization Icon -->
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/></svg>
+              </div>
+              <div>
+                <span class="text-[11px] font-bold uppercase tracking-widest text-brand-goldDark">04</span>
+                <h3 class="font-serif text-xl font-bold text-brand-green mt-0.5" data-i18n="why_b4_title">
+                  Une solution personnalisée
+                </h3>
+                <p class="mt-2 text-sm text-brand-green/80 leading-relaxed" data-i18n="why_b4_desc">
+                  Chaque carte, support ou profil digital est conçu autour de votre métier, de votre charte graphique et des besoins propres à votre structure.
+                </p>
+              </div>
+            </div>
+
+            <!-- Benefit 5 -->
+            <div class="bg-brand-green text-brand-ivory rounded-3xl p-7 border border-brand-gold/40 shadow-md flex flex-col justify-between">
+              <div class="w-12 h-12 rounded-xl bg-brand-gold/15 text-brand-gold flex items-center justify-center mb-5 border border-brand-gold/40">
+                <!-- Modern Digital Presence Icon -->
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+              </div>
+              <div>
+                <span class="text-[11px] font-bold uppercase tracking-widest text-brand-gold">05</span>
+                <h3 class="font-serif text-xl font-bold text-brand-ivory mt-0.5" data-i18n="why_b5_title">
+                  Une présence digitale moderne
+                </h3>
+                <p class="mt-2 text-sm text-brand-ivory/80 leading-relaxed" data-i18n="why_b5_desc">
+                  Une identité professionnelle pensée pour accompagner l’évolution de votre activité, selon les modalités de service convenues.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 4 — COMMENT ÇA FONCTIONNE ?
+         4 Simple Steps + QR Code Alternative Banner
+         ========================================================================== -->
+    <section id="fonctionnement" class="py-20 lg:py-28 bg-brand-ivory">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="rounded-[36px] bg-luxury-green bg-arabesque-pattern text-brand-ivory p-8 sm:p-12 lg:p-16 border border-brand-gold/30 shadow-luxury">
+          
+          <!-- Section Heading -->
+          <div class="text-center max-w-2xl mx-auto mb-14">
+            <span class="text-xs font-bold uppercase tracking-[0.2em] text-brand-gold" data-i18n="how_eyebrow">Simplicité & Fluidité</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-ivory mt-2" data-i18n="how_title">
+              Comment ça fonctionne ?
+            </h2>
+            <p class="mt-3 text-sm sm:text-base text-brand-ivory/80" data-i18n="how_subtitle">
+              Une expérience immédiate et intuitive pour vos interlocuteurs, directement depuis leur smartphone.
+            </p>
+          </div>
+
+          <!-- 4 Steps Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 relative">
+            
+            <!-- Step 1 -->
+            <div class="relative bg-brand-deep/70 border border-brand-gold/25 rounded-2xl p-6 text-center sm:text-start flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-center sm:justify-between mb-5">
+                  <div class="w-14 h-14 rounded-2xl bg-brand-green border border-brand-gold/50 flex items-center justify-center text-brand-gold relative nfc-pulse">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+                  </div>
+                  <span class="hidden sm:inline-flex w-8 h-8 rounded-full bg-gold-gradient text-brand-deep font-bold text-sm items-center justify-center">1</span>
+                </div>
+                <span class="sm:hidden inline-block px-2.5 py-0.5 rounded-full bg-brand-gold text-brand-deep font-bold text-xs mb-2">1</span>
+                <h3 class="font-serif text-lg font-bold text-brand-goldLight" data-i18n="how_s1_title">Approchez</h3>
+                <p class="mt-2 text-sm text-brand-ivory/80 leading-relaxed" data-i18n="how_s1_desc">
+                  Approchez votre smartphone de la carte ou du support NFC.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="relative bg-brand-deep/70 border border-brand-gold/25 rounded-2xl p-6 text-center sm:text-start flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-center sm:justify-between mb-5">
+                  <div class="w-14 h-14 rounded-2xl bg-brand-green border border-brand-gold/50 flex items-center justify-center text-brand-gold">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                  </div>
+                  <span class="hidden sm:inline-flex w-8 h-8 rounded-full bg-gold-gradient text-brand-deep font-bold text-sm items-center justify-center">2</span>
+                </div>
+                <span class="sm:hidden inline-block px-2.5 py-0.5 rounded-full bg-brand-gold text-brand-deep font-bold text-xs mb-2">2</span>
+                <h3 class="font-serif text-lg font-bold text-brand-goldLight" data-i18n="how_s2_title">Ouverture directe</h3>
+                <p class="mt-2 text-sm text-brand-ivory/80 leading-relaxed" data-i18n="how_s2_desc">
+                  Le profil digital s’ouvre directement dans le navigateur du téléphone.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="relative bg-brand-deep/70 border border-brand-gold/25 rounded-2xl p-6 text-center sm:text-start flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-center sm:justify-between mb-5">
+                  <div class="w-14 h-14 rounded-2xl bg-brand-green border border-brand-gold/50 flex items-center justify-center text-brand-gold">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 6h16M4 10h16M4 14h10M4 18h10"/></svg>
+                  </div>
+                  <span class="hidden sm:inline-flex w-8 h-8 rounded-full bg-gold-gradient text-brand-deep font-bold text-sm items-center justify-center">3</span>
+                </div>
+                <span class="sm:hidden inline-block px-2.5 py-0.5 rounded-full bg-brand-gold text-brand-deep font-bold text-xs mb-2">3</span>
+                <h3 class="font-serif text-lg font-bold text-brand-goldLight" data-i18n="how_s3_title">Consultez</h3>
+                <p class="mt-2 text-sm text-brand-ivory/80 leading-relaxed" data-i18n="how_s3_desc">
+                  Consultez les informations disponibles : activité, services, coordonnées et liens.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="relative bg-brand-deep/70 border border-brand-gold/25 rounded-2xl p-6 text-center sm:text-start flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-center sm:justify-between mb-5">
+                  <div class="w-14 h-14 rounded-2xl bg-brand-green border border-brand-gold/50 flex items-center justify-center text-brand-gold">
+                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  </div>
+                  <span class="hidden sm:inline-flex w-8 h-8 rounded-full bg-gold-gradient text-brand-deep font-bold text-sm items-center justify-center">4</span>
+                </div>
+                <span class="sm:hidden inline-block px-2.5 py-0.5 rounded-full bg-brand-gold text-brand-deep font-bold text-xs mb-2">4</span>
+                <h3 class="font-serif text-lg font-bold text-brand-goldLight" data-i18n="how_s4_title">Enregistrez & Partagez</h3>
+                <p class="mt-2 text-sm text-brand-ivory/80 leading-relaxed" data-i18n="how_s4_desc">
+                  Enregistrez ou partagez les informations utiles en toute simplicité.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Alternative Access Highlight: QR Code & Direct Link -->
+          <div class="mt-10 pt-8 border-t border-brand-gold/20 flex flex-col md:flex-row items-center justify-between gap-6 bg-brand-deep/50 rounded-2xl p-6">
+            <div class="flex items-center gap-4">
+              <div class="w-12 h-12 rounded-xl bg-brand-gold/15 border border-brand-gold/40 text-brand-gold flex items-center justify-center shrink-0">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z"/></svg>
+              </div>
+              <div>
+                <h4 class="font-serif font-bold text-base sm:text-lg text-brand-goldLight" data-i18n="how_qr_title">
+                  Accès alternatif par QR Code intégré
+                </h4>
+                <p class="text-xs sm:text-sm text-brand-ivory/80 mt-0.5" data-i18n="how_qr_desc">
+                  Pour les appareils ne disposant pas du NFC activé, le QR Code imprimé sur le support permet d’ouvrir exactement le même profil digital via l’appareil photo.
+                </p>
+              </div>
+            </div>
+            <span class="px-4 py-2 rounded-full bg-brand-green border border-brand-gold/40 text-xs font-semibold text-brand-gold shrink-0" data-i18n="how_qr_badge">
+              Double compatibilité NFC + QR
+            </span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 5 — UN PROFIL À VOTRE IMAGE
+         Crucial Distinction: CartePro Brand vs Customer's Customized Identity
+         + 3 Clearly Labeled Demonstration Profiles ("Exemple de démonstration")
+         ========================================================================== -->
+    <section id="personnalisation" class="py-20 lg:py-28 bg-brand-ivoryWarm border-t border-brand-gold/25">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header & Brand vs Customer Distinction Box -->
+        <div class="max-w-3xl mx-auto text-center mb-12">
+          <div class="inline-flex items-center gap-3 mb-3">
+            <span class="gold-ornament-line"></span>
+            <span class="text-xs font-bold uppercase tracking-[0.2em] text-brand-goldDark" data-i18n="custom_eyebrow">Personnalisation Sur-Mesure</span>
+            <span class="gold-ornament-line"></span>
+          </div>
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-brand-green" data-i18n="custom_title">
+            Un profil à votre image
+          </h2>
+          <p class="mt-4 text-base sm:text-lg text-brand-green/80 leading-relaxed" data-i18n="custom_subtitle">
+            CartePro est le partenaire qui conçoit votre solution, mais votre carte, votre support de table et votre profil digital portent votre propre identité professionnelle.
+          </p>
+        </div>
+
+        <!-- Essential Brand vs Customer Identity Banner -->
+        <div class="bg-white rounded-3xl p-6 sm:p-8 border border-brand-gold/45 shadow-sm mb-14 max-w-5xl mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+            <div class="md:col-span-2 space-y-2">
+              <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-brand-goldDark">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+                <span data-i18n="custom_distinction_badge">Votre Marque au Premier Plan</span>
+              </div>
+              <h3 class="font-serif text-xl sm:text-2xl font-bold text-brand-green" data-i18n="custom_distinction_title">
+                Votre nom, votre logo, vos couleurs et votre métier
+              </h3>
+              <p class="text-sm text-brand-green/80 leading-relaxed" data-i18n="custom_distinction_desc">
+                Que vous soyez avocat, médecin, restaurateur ou dirigeant d’entreprise, vos supports physiques et votre profil digital sont personnalisés selon votre charte graphique et les besoins spécifiques de votre activité.
+              </p>
+            </div>
+            <div class="bg-brand-ivory rounded-2xl p-4 border border-brand-gold/30 text-xs space-y-2 text-brand-green/90">
+              <div class="flex items-center gap-2 font-semibold">
+                <span class="w-2 h-2 rounded-full bg-brand-green"></span>
+                <span data-i18n="custom_pillar_1">Adapté à votre profession</span>
+              </div>
+              <div class="flex items-center gap-2 font-semibold">
+                <span class="w-2 h-2 rounded-full bg-brand-green"></span>
+                <span data-i18n="custom_pillar_2">Respect de votre identité visuelle</span>
+              </div>
+              <div class="flex items-center gap-2 font-semibold">
+                <span class="w-2 h-2 rounded-full bg-brand-green"></span>
+                <span data-i18n="custom_pillar_3">Rubriques choisies selon vos besoins</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Demonstration Examples Notice -->
+        <div class="text-center mb-8">
+          <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-green text-brand-gold text-xs font-semibold tracking-wide shadow-sm">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <span data-i18n="demo_section_label">Exemples de profils digitaux — Exemple de démonstration</span>
+          </span>
+        </div>
+
+        <!-- 3 Fictional Demonstration Profiles (Matching Reference 1 Bottom & References 3, 4, 5) -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+          
+          <!-- DEMO 1: Cabinet Juridique (Avocat) -->
+          <div class="bg-white rounded-[32px] p-5 border border-brand-gold/40 shadow-luxury flex flex-col justify-between">
+            <!-- Strict Demonstration Label -->
+            <div class="flex items-center justify-between mb-4 px-2">
+              <span class="text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-amber-100 text-brand-deep border border-brand-gold" data-i18n="demo_badge">
+                Exemple de démonstration
+              </span>
+              <span class="text-xs font-medium text-brand-green/60" data-i18n="demo1_sector">Profession Libérale</span>
+            </div>
+
+            <!-- Smartphone Mockup: Cabinet Juridique -->
+            <div class="w-full max-w-[270px] mx-auto bg-[#0B1C1A] rounded-[34px] p-2.5 border-2 border-brand-gold/40 shadow-md">
+              <div class="w-16 h-3.5 bg-black rounded-full mx-auto mb-2"></div>
+              <div class="bg-gradient-to-b from-[#173834] to-[#0E2421] rounded-[24px] overflow-hidden border border-brand-gold/20">
+                <!-- Header Banner -->
+                <div class="p-4 text-center bg-brand-deep/60 border-b border-brand-gold/20">
+                  <div class="w-12 h-12 rounded-full bg-brand-gold/15 border border-brand-gold mx-auto flex items-center justify-center text-brand-gold mb-2">
+                    <!-- Scales of Justice SVG (No fictional person photo used as CartePro identity) -->
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/></svg>
+                  </div>
+                  <h4 class="font-serif font-bold text-base text-brand-ivory" data-i18n="demo1_name">Cabinet Juridique</h4>
+                  <p class="text-[11px] text-brand-gold" data-i18n="demo1_role">Avocat</p>
+                  
+                  <!-- Quick Action Circles -->
+                  <div class="flex justify-center gap-3 mt-3">
+                    <span class="px-2.5 py-1 rounded-lg bg-brand-green border border-brand-gold/30 text-[10px] text-brand-ivory" data-i18n="demo_act_call">Appeler</span>
+                    <span class="px-2.5 py-1 rounded-lg bg-brand-green border border-brand-gold/30 text-[10px] text-brand-ivory">WhatsApp</span>
+                    <span class="px-2.5 py-1 rounded-lg bg-brand-green border border-brand-gold/30 text-[10px] text-brand-ivory">Email</span>
+                  </div>
+                </div>
+
+                <!-- Ivory Content Links (Matching Reference 1 Phone 1) -->
+                <div class="bg-brand-ivory p-3 space-y-2 text-brand-green text-xs">
+                  <div class="flex items-center justify-between p-2.5 rounded-xl bg-white border border-brand-gold/30">
+                    <span class="font-medium" data-i18n="demo1_item_1">À propos du cabinet</span>
+                    <span class="text-brand-goldDark rtl-flip">›</span>
+                  </div>
+                  <div class="flex items-center justify-between p-2.5 rounded-xl bg-white border border-brand-gold/30">
+                    <span class="font-medium" data-i18n="demo1_item_2">Domaines d’intervention</span>
+                    <span class="text-brand-goldDark rtl-flip">›</span>
+                  </div>
+                  <div class="flex items-center justify-between p-2.5 rounded-xl bg-white border border-brand-gold/30">
+                    <span class="font-medium" data-i18n="demo1_item_3">Horaires de réception</span>
+                    <span class="text-brand-goldDark rtl-flip">›</span>
+                  </div>
+                  <div class="flex items-center justify-between p-2.5 rounded-xl bg-white border border-brand-gold/30">
+                    <span class="font-medium" data-i18n="demo1_item_4">Nous localiser</span>
+                    <span class="text-brand-goldDark rtl-flip">›</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p class="text-xs text-center text-brand-green/70 mt-4 px-2" data-i18n="demo1_caption">
+              Illustration fictive d’un profil personnalisé pour un cabinet d’avocat (CartePro Business ou Digital).
+            </p>
+          </div>
+
+          <!-- DEMO 2: Le Patio (Restaurant & Café) -->
+          <div class="bg-white rounded-[32px] p-5 border border-brand-gold/40 shadow-luxury flex flex-col justify-between">
+            <!-- Strict Demonstration Label -->
+            <div class="flex items-center justify-between mb-4 px-2">
+              <span class="text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-amber-100 text-brand-deep border border-brand-gold" data-i18n="demo_badge">
+                Exemple de démonstration
+              </span>
+              <span class="text-xs font-medium text-brand-green/60" data-i18n="demo2_sector">Restauration & Hôtellerie</span>
+            </div>
+
+            <!-- Smartphone Mockup: Le Patio -->
+            <div class="w-full max-w-[270px] mx-auto bg-[#0B1C1A] rounded-[34px] p-2.5 border-2 border-brand-gold/40 shadow-md">
+              <div class="w-16 h-3.5 bg-black rounded-full mx-auto mb-2"></div>
+              <div class="bg-gradient-to-b from-[#173834] to-[#0E2421] rounded-[24px] overflow-hidden border border-brand-gold/20">
+                <!-- Header Banner -->
+                <div class="p-4 text-center bg-brand-deep/60 border-b border-brand-gold/20">
+                  <div class="w-12 h-12 rounded-full bg-brand-gold/15 border border-brand-gold mx-auto flex items-center justify-center text-brand-gold mb-2">
+                    <!-- Restaurant Cloche Icon -->
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 6V4m0 2a8 8 0 00-8 8h16a8 8 0 00-8-8zM3 16h18"/></svg>
+                  </div>
+                  <h4 class="font-serif font-bold text-base text-brand-ivory" data-i18n="demo2_name">Le Patio</h4>
+                  <p class="text-[11px] text-brand-gold" data-i18n="demo2_role">Restaurant & Café</p>
+                  
+                  <!-- Quick Action Circles -->
+                  <div class="flex justify-center gap-3 mt-3">
+                    <span class="px-2.5 py-1 rounded-lg bg-brand-green border border-brand-gold/30 text-[10px] text-brand-ivory" data-i18n="demo_act_call">Appeler</span>
+                    <span class="px-2.5 py-1 rounded-lg bg-brand-green border border-brand-gold/30 text-[10px] text-brand-ivory">WhatsApp</span>
+                    <span class="px-2.5 py-1 rounded-lg bg-brand-green border border-brand-gold/30 text-[10px] text-brand-ivory" data-i18n="demo_act_map">Itinéraire</span>
+                  </div>
+                </div>
+
+                <!-- Ivory Content Links (Matching Reference 1 Phone 2) -->
+                <div class="bg-brand-ivory p-3 space-y-2 text-brand-green text-xs">
+                  <div class="flex items-center justify-between p-2.5 rounded-xl bg-white border border-brand-gold/30">
+                    <span class="font-medium" data-i18n="demo2_item_1">Menu Digital</span>
+                    <span class="text-brand-goldDark rtl-flip">›</span>
+                  </div>
+                  <div class="flex items-center justify-between p-2.5 rounded-xl bg-white border border-brand-gold/30">
+                    <span class="font-medium" data-i18n="demo2_item_2">Accès Wi-Fi Client</span>
+                    <span class="text-brand-goldDark rtl-flip">›</span>
+                  </div>
+                  <div class="flex items-center justify-between p-2.5 rounded-xl bg-white border border-brand-gold/30">
+                    <span class="font-medium" data-i18n="demo2_item_3">Galerie & Spécialités</span>
+                    <span class="text-brand-goldDark rtl-flip">›</span>
+                  </div>
+                  <div class="flex items-center justify-between p-2.5 rounded-xl bg-white border border-brand-gold/30">
+                    <span class="font-medium" data-i18n="demo2_item_4">Horaires & Informations</span>
+                    <span class="text-brand-goldDark rtl-flip">›</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p class="text-xs text-center text-brand-green/70 mt-4 px-2" data-i18n="demo2_caption">
+              Illustration fictive d’une interface pour restaurant accessible via le support CartePro Table & Counter.
+            </p>
+          </div>
+
+          <!-- DEMO 3: Cabinet Médical / Clinique Dentaire -->
+          <div class="bg-white rounded-[32px] p-5 border border-brand-gold/40 shadow-luxury flex flex-col justify-between">
+            <!-- Strict Demonstration Label -->
+            <div class="flex items-center justify-between mb-4 px-2">
+              <span class="text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-amber-100 text-brand-deep border border-brand-gold" data-i18n="demo_badge">
+                Exemple de démonstration
+              </span>
+              <span class="text-xs font-medium text-brand-green/60" data-i18n="demo3_sector">Santé & Médical</span>
+            </div>
+
+            <!-- Smartphone Mockup: Cabinet Médical -->
+            <div class="w-full max-w-[270px] mx-auto bg-[#0B1C1A] rounded-[34px] p-2.5 border-2 border-brand-gold/40 shadow-md">
+              <div class="w-16 h-3.5 bg-black rounded-full mx-auto mb-2"></div>
+              <div class="bg-gradient-to-b from-[#173834] to-[#0E2421] rounded-[24px] overflow-hidden border border-brand-gold/20">
+                <!-- Header Banner -->
+                <div class="p-4 text-center bg-brand-deep/60 border-b border-brand-gold/20">
+                  <div class="w-12 h-12 rounded-full bg-brand-gold/15 border border-brand-gold mx-auto flex items-center justify-center text-brand-gold mb-2">
+                    <!-- Medical Cross / Stethoscope Icon -->
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+                  </div>
+                  <h4 class="font-serif font-bold text-base text-brand-ivory" data-i18n="demo3_name">Cabinet Médical</h4>
+                  <p class="text-[11px] text-brand-gold" data-i18n="demo3_role">Médecin & Soins Spécialisés</p>
+                  
+                  <!-- Quick Action Circles -->
+                  <div class="flex justify-center gap-3 mt-3">
+                    <span class="px-2.5 py-1 rounded-lg bg-brand-green border border-brand-gold/30 text-[10px] text-brand-ivory" data-i18n="demo_act_call">Appeler</span>
+                    <span class="px-2.5 py-1 rounded-lg bg-brand-green border border-brand-gold/30 text-[10px] text-brand-ivory">WhatsApp</span>
+                    <span class="px-2.5 py-1 rounded-lg bg-brand-green border border-brand-gold/30 text-[10px] text-brand-ivory">Email</span>
+                  </div>
+                </div>
+
+                <!-- Ivory Content Links (Matching Reference 1 Phone 3) -->
+                <div class="bg-brand-ivory p-3 space-y-2 text-brand-green text-xs">
+                  <div class="flex items-center justify-between p-2.5 rounded-xl bg-white border border-brand-gold/30">
+                    <span class="font-medium" data-i18n="demo3_item_1">À propos du cabinet</span>
+                    <span class="text-brand-goldDark rtl-flip">›</span>
+                  </div>
+                  <div class="flex items-center justify-between p-2.5 rounded-xl bg-white border border-brand-gold/30">
+                    <span class="font-medium" data-i18n="demo3_item_2">Spécialités & Services</span>
+                    <span class="text-brand-goldDark rtl-flip">›</span>
+                  </div>
+                  <div class="flex items-center justify-between p-2.5 rounded-xl bg-white border border-brand-gold/30">
+                    <span class="font-medium" data-i18n="demo3_item_3">Horaires de consultation</span>
+                    <span class="text-brand-goldDark rtl-flip">›</span>
+                  </div>
+                  <div class="flex items-center justify-between p-2.5 rounded-xl bg-white border border-brand-gold/30">
+                    <span class="font-medium" data-i18n="demo3_item_4">Accès & Localisation</span>
+                    <span class="text-brand-goldDark rtl-flip">›</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p class="text-xs text-center text-brand-green/70 mt-4 px-2" data-i18n="demo3_caption">
+              Illustration fictive d’un profil professionnel médical ou dentaire (CartePro Digital ou Business).
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 6 — UNE IDENTITÉ PROFESSIONNELLE TOURNÉE VERS L’AVENIR
+         Digital evolution in Morocco & responsible Maroc 2030 horizon context
+         ========================================================================== -->
+    <section class="py-20 lg:py-24 bg-brand-ivory relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="rounded-[32px] bg-white border border-brand-gold/40 shadow-luxury p-8 sm:p-12 lg:p-16 relative overflow-hidden">
+          <!-- Subtle Corner Moroccan Arch Motif -->
+          <svg class="absolute -right-12 -bottom-12 w-72 h-72 text-brand-gold/10 pointer-events-none" viewBox="0 0 200 200" fill="currentColor" aria-hidden="true">
+            <path d="M100 10 C150 10 190 50 190 100 L190 190 L10 190 L10 100 C10 50 50 10 100 10 Z" />
+          </svg>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center relative z-10">
+            <div class="lg:col-span-8 space-y-5">
+              <div class="inline-flex items-center gap-2.5 px-3.5 py-1 rounded-full bg-brand-ivoryWarm border border-brand-gold/40 text-brand-green text-xs font-bold uppercase tracking-wider">
+                <span class="w-2 h-2 rounded-full bg-brand-goldDark"></span>
+                <span data-i18n="future_eyebrow">Modernité & Transition Digitale au Maroc</span>
+              </div>
+
+              <h2 class="font-serif text-3xl sm:text-4xl font-bold text-brand-green leading-tight" data-i18n="future_title">
+                Une identité professionnelle tournée vers l’avenir
+              </h2>
+
+              <p class="text-base text-brand-green/85 leading-relaxed" data-i18n="future_p1">
+                Au Maroc, les usages professionnels, l’accueil client et les échanges commerciaux évoluent rapidement vers davantage de fluidité digitale. Disposer d’une présentation claire, immédiate et accessible sur smartphone est devenu un véritable marqueur de professionnalisme.
+              </p>
+
+              <p class="text-sm sm:text-base text-brand-green/80 leading-relaxed" data-i18n="future_p2">
+                À l’approche d’échéances majeures et de la dynamique d’ouverture portée par l’horizon Maroc 2030, les indépendants, établissements hôteliers, restaurants et entreprises marocaines ont l’opportunité de moderniser leurs supports d’accueil et de contact avec élégance et simplicité.
+              </p>
+            </div>
+
+            <div class="lg:col-span-4">
+              <div class="bg-luxury-green text-brand-ivory rounded-2xl p-6 sm:p-7 border border-brand-gold/40 space-y-4">
+                <div class="w-11 h-11 rounded-xl bg-brand-gold/15 border border-brand-gold/40 flex items-center justify-center text-brand-gold">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <h3 class="font-serif text-xl font-bold text-brand-goldLight" data-i18n="future_card_title">
+                  L’excellence de l’accueil et du partage
+                </h3>
+                <p class="text-xs sm:text-sm text-brand-ivory/80 leading-relaxed" data-i18n="future_card_desc">
+                  Des supports physiques durables associés à une interface digitale soignée, pensés pour répondre aux standards actuels des professionnels au Maroc.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 7 — POUR QUI ?
+         Elegant showcase of all 14 official target professions & organizations
+         ========================================================================== -->
+    <section id="pour-qui" class="py-20 lg:py-28 bg-brand-ivoryWarm border-t border-brand-gold/25">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <div class="inline-flex items-center gap-3 mb-3">
+            <span class="gold-ornament-line"></span>
+            <span class="text-xs font-bold uppercase tracking-[0.2em] text-brand-goldDark" data-i18n="who_eyebrow">Tous les Secteurs d’Activité</span>
+            <span class="gold-ornament-line"></span>
+          </div>
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-brand-green" data-i18n="who_title">
+            Pour qui ?
+          </h2>
+          <p class="mt-4 text-base sm:text-lg text-brand-green/80" data-i18n="who_subtitle">
+            CartePro accompagne les professions libérales, les établissements d’accueil, les indépendants et les entreprises à travers tout le Maroc.
+          </p>
+        </div>
+
+        <!-- 14 Target Professions Grid (Matching Reference 1 & Reference 2 Icons) -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-4">
+          
+          <!-- 1. Avocats -->
+          <div class="bg-white rounded-2xl p-5 border border-brand-gold/30 shadow-sm hover-lift text-center flex flex-col items-center justify-center gap-3">
+            <div class="w-12 h-12 rounded-xl bg-brand-ivory flex items-center justify-center text-brand-goldDark border border-brand-gold/30">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/></svg>
+            </div>
+            <span class="font-semibold text-sm text-brand-green" data-i18n="aud_1">Avocats</span>
+          </div>
+
+          <!-- 2. Médecins -->
+          <div class="bg-white rounded-2xl p-5 border border-brand-gold/30 shadow-sm hover-lift text-center flex flex-col items-center justify-center gap-3">
+            <div class="w-12 h-12 rounded-xl bg-brand-ivory flex items-center justify-center text-brand-goldDark border border-brand-gold/30">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+            </div>
+            <span class="font-semibold text-sm text-brand-green" data-i18n="aud_2">Médecins</span>
+          </div>
+
+          <!-- 3. Dentistes -->
+          <div class="bg-white rounded-2xl p-5 border border-brand-gold/30 shadow-sm hover-lift text-center flex flex-col items-center justify-center gap-3">
+            <div class="w-12 h-12 rounded-xl bg-brand-ivory flex items-center justify-center text-brand-goldDark border border-brand-gold/30">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            </div>
+            <span class="font-semibold text-sm text-brand-green" data-i18n="aud_3">Dentistes</span>
+          </div>
+
+          <!-- 4. Architectes -->
+          <div class="bg-white rounded-2xl p-5 border border-brand-gold/30 shadow-sm hover-lift text-center flex flex-col items-center justify-center gap-3">
+            <div class="w-12 h-12 rounded-xl bg-brand-ivory flex items-center justify-center text-brand-goldDark border border-brand-gold/30">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1"/></svg>
+            </div>
+            <span class="font-semibold text-sm text-brand-green" data-i18n="aud_4">Architectes</span>
+          </div>
+
+          <!-- 5. Ingénieurs -->
+          <div class="bg-white rounded-2xl p-5 border border-brand-gold/30 shadow-sm hover-lift text-center flex flex-col items-center justify-center gap-3">
+            <div class="w-12 h-12 rounded-xl bg-brand-ivory flex items-center justify-center text-brand-goldDark border border-brand-gold/30">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </div>
+            <span class="font-semibold text-sm text-brand-green" data-i18n="aud_5">Ingénieurs</span>
+          </div>
+
+          <!-- 6. Entrepreneurs -->
+          <div class="bg-white rounded-2xl p-5 border border-brand-gold/30 shadow-sm hover-lift text-center flex flex-col items-center justify-center gap-3">
+            <div class="w-12 h-12 rounded-xl bg-brand-ivory flex items-center justify-center text-brand-goldDark border border-brand-gold/30">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </div>
+            <span class="font-semibold text-sm text-brand-green" data-i18n="aud_6">Entrepreneurs</span>
+          </div>
+
+          <!-- 7. Commerçants -->
+          <div class="bg-white rounded-2xl p-5 border border-brand-gold/30 shadow-sm hover-lift text-center flex flex-col items-center justify-center gap-3">
+            <div class="w-12 h-12 rounded-xl bg-brand-ivory flex items-center justify-center text-brand-goldDark border border-brand-gold/30">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+            </div>
+            <span class="font-semibold text-sm text-brand-green" data-i18n="aud_7">Commerçants</span>
+          </div>
+
+          <!-- 8. Restaurants -->
+          <div class="bg-white rounded-2xl p-5 border border-brand-gold/30 shadow-sm hover-lift text-center flex flex-col items-center justify-center gap-3">
+            <div class="w-12 h-12 rounded-xl bg-brand-ivory flex items-center justify-center text-brand-goldDark border border-brand-gold/30">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M12 6V4m0 2a8 8 0 00-8 8h16a8 8 0 00-8-8zM3 16h18"/></svg>
+            </div>
+            <span class="font-semibold text-sm text-brand-green" data-i18n="aud_8">Restaurants</span>
+          </div>
+
+          <!-- 9. Cafés -->
+          <div class="bg-white rounded-2xl p-5 border border-brand-gold/30 shadow-sm hover-lift text-center flex flex-col items-center justify-center gap-3">
+            <div class="w-12 h-12 rounded-xl bg-brand-ivory flex items-center justify-center text-brand-goldDark border border-brand-gold/30">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M18 8h1a4 4 0 010 8h-1M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8zm4-4h8"/></svg>
+            </div>
+            <span class="font-semibold text-sm text-brand-green" data-i18n="aud_9">Cafés</span>
+          </div>
+
+          <!-- 10. Hôtels -->
+          <div class="bg-white rounded-2xl p-5 border border-brand-gold/30 shadow-sm hover-lift text-center flex flex-col items-center justify-center gap-3">
+            <div class="w-12 h-12 rounded-xl bg-brand-ivory flex items-center justify-center text-brand-goldDark border border-brand-gold/30">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+            </div>
+            <span class="font-semibold text-sm text-brand-green" data-i18n="aud_10">Hôtels</span>
+          </div>
+
+          <!-- 11. Consultants -->
+          <div class="bg-white rounded-2xl p-5 border border-brand-gold/30 shadow-sm hover-lift text-center flex flex-col items-center justify-center gap-3">
+            <div class="w-12 h-12 rounded-xl bg-brand-ivory flex items-center justify-center text-brand-goldDark border border-brand-gold/30">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg>
+            </div>
+            <span class="font-semibold text-sm text-brand-green" data-i18n="aud_11">Consultants</span>
+          </div>
+
+          <!-- 12. Freelances -->
+          <div class="bg-white rounded-2xl p-5 border border-brand-gold/30 shadow-sm hover-lift text-center flex flex-col items-center justify-center gap-3">
+            <div class="w-12 h-12 rounded-xl bg-brand-ivory flex items-center justify-center text-brand-goldDark border border-brand-gold/30">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </div>
+            <span class="font-semibold text-sm text-brand-green" data-i18n="aud_12">Freelances</span>
+          </div>
+
+          <!-- 13. Entreprises -->
+          <div class="bg-white rounded-2xl p-5 border border-brand-gold/30 shadow-sm hover-lift text-center flex flex-col items-center justify-center gap-3">
+            <div class="w-12 h-12 rounded-xl bg-brand-ivory flex items-center justify-center text-brand-goldDark border border-brand-gold/30">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+            </div>
+            <span class="font-semibold text-sm text-brand-green" data-i18n="aud_13">Entreprises</span>
+          </div>
+
+          <!-- 14. PME -->
+          <div class="bg-white rounded-2xl p-5 border border-brand-gold/30 shadow-sm hover-lift text-center flex flex-col items-center justify-center gap-3">
+            <div class="w-12 h-12 rounded-xl bg-brand-ivory flex items-center justify-center text-brand-goldDark border border-brand-gold/30">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </div>
+            <span class="font-semibold text-sm text-brand-green" data-i18n="aud_14">PME</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 8 — CONTACT CTA
+         Luxury Deep Green & Champagne Gold Call-to-Action Banner
+         ========================================================================== -->
+    <section id="contact" class="py-20 bg-brand-ivory">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="relative rounded-[36px] bg-luxury-green bg-arabesque-pattern text-brand-ivory px-6 py-14 sm:p-16 lg:p-20 overflow-hidden border border-brand-gold/40 shadow-luxury text-center">
+          
+          <!-- Subtle Moroccan Skyline & Gold Wave Accent (Inspired by Reference 1 Bottom Banner) -->
+          <svg class="absolute bottom-0 left-0 w-full h-24 text-brand-gold/15 pointer-events-none" viewBox="0 0 1200 120" fill="currentColor" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M0 120 L0 85 L45 85 L45 35 L60 20 L75 35 L75 85 L140 85 L140 65 L180 65 L180 120 Z" />
+            <path d="M0 110 Q400 65 800 105 T1200 80 L1200 120 L0 120 Z" opacity="0.5" />
+          </svg>
+
+          <div class="relative z-10 max-w-3xl mx-auto space-y-6">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-deep/80 border border-brand-gold/30 text-brand-gold text-xs font-semibold uppercase tracking-widest">
+              <span>CartePro Maroc</span>
+            </div>
+
+            <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-brand-ivory leading-tight" data-i18n="cta_title">
+              Prêt à présenter votre activité autrement ?
+            </h2>
+
+            <p class="text-base sm:text-xl text-brand-ivory/85 max-w-2xl mx-auto leading-relaxed" data-i18n="cta_subtitle">
+              Contactez CartePro et découvrez la solution adaptée à votre activité.
+            </p>
+
+            <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+              <a href="https://wa.me/212669256706" target="_blank" rel="noopener noreferrer" data-wa-context="general" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-gold-gradient hover:brightness-105 text-brand-deep font-bold text-base sm:text-lg px-9 py-4 rounded-full shadow-gold-glow transition-all transform hover:-translate-y-0.5">
+                <svg class="w-6 h-6 shrink-0 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.625.846 5.059 2.284 7.033l-1.492 5.451 5.603-1.47c1.903 1.258 4.179 1.986 6.605 1.986 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/>
+                </svg>
+                <span data-i18n="cta_btn">Contactez-nous sur WhatsApp</span>
+              </a>
+            </div>
+
+            <p class="text-xs text-brand-gold/80 pt-1" dir="ltr">
+              WhatsApp : +212 669 256 706
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       SECTION 9 — FOOTER
+       Includes: CartePro Logo, Official Slogan, Navigation, Product Links,
+       Official WhatsApp Contact, and Language Selector. No invented details.
+       ========================================================================== -->
+  <footer class="bg-brand-deep text-brand-ivory border-t border-brand-gold/25 pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-brand-gold/15">
+        
+        <!-- Column 1: Brand & Official Slogan -->
+        <div class="lg:col-span-5 space-y-4">
+          <a href="#accueil" class="inline-block focus:outline-none" aria-label="CartePro">
+            <svg class="h-12 w-auto" viewBox="0 0 250 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g transform="translate(6, 6)">
+                <g transform="rotate(-11 26 22)">
+                  <rect x="4" y="8" width="42" height="27" rx="4.5" stroke="#E6C994" stroke-width="2.6" fill="#183A36" />
+                  <path d="M6.5 23.5 L43.5 18 L43.5 24.5 L6.5 28 Z" fill="#E6C994" />
+                </g>
+                <path d="M53 15 C56.5 19.5 56.5 25.5 53 30" stroke="#E6C994" stroke-width="2.5" stroke-linecap="round" />
+                <path d="M58.5 11 C63.5 17.5 63.5 27.5 58.5 34" stroke="#E6C994" stroke-width="2.5" stroke-linecap="round" />
+                <path d="M64 7 C70.5 15.5 70.5 29.5 64 38" stroke="#E6C994" stroke-width="2.5" stroke-linecap="round" />
+              </g>
+              <text x="82" y="42" font-family="'Playfair Display', Georgia, serif" font-weight="700" font-style="italic" font-size="31" fill="#F7F5F0">Carte<tspan fill="#E6C994">Pro</tspan></text>
+              <path d="M92 53 Q155 46 218 53 Q155 50.5 92 53 Z" fill="#E6C994" />
+            </svg>
+          </a>
+          <p class="font-serif italic text-lg text-brand-gold" data-i18n="brand_slogan">
+            Votre identité professionnelle, autrement.
+          </p>
+          <p class="text-sm text-brand-ivory/75 max-w-sm leading-relaxed" data-i18n="footer_desc">
+            Solutions modernes d’identité professionnelle combinant supports NFC personnalisés, QR Codes et profils digitaux sur-mesure au Maroc.
+          </p>
+        </div>
+
+        <!-- Column 2: Navigation -->
+        <div class="lg:col-span-3 space-y-3">
+          <h3 class="text-xs font-bold uppercase tracking-widest text-brand-gold" data-i18n="footer_nav_title">Navigation</h3>
+          <ul class="space-y-2.5 text-sm text-brand-ivory/80">
+            <li><a href="#accueil" data-i18n="nav_home" class="hover:text-brand-gold transition-colors">Accueil</a></li>
+            <li><a href="#solutions" data-i18n="nav_solutions" class="hover:text-brand-gold transition-colors">Nos solutions</a></li>
+            <li><a href="#pourquoi" data-i18n="nav_why" class="hover:text-brand-gold transition-colors">Pourquoi CartePro ?</a></li>
+            <li><a href="#fonctionnement" data-i18n="nav_how" class="hover:text-brand-gold transition-colors">Fonctionnement</a></li>
+            <li><a href="#personnalisation" data-i18n="nav_custom" class="hover:text-brand-gold transition-colors">Sur-mesure</a></li>
+            <li><a href="#pour-qui" data-i18n="nav_who" class="hover:text-brand-gold transition-colors">Pour qui ?</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Official Products -->
+        <div class="lg:col-span-2 space-y-3">
+          <h3 class="text-xs font-bold uppercase tracking-widest text-brand-gold" data-i18n="footer_prod_title">Solutions</h3>
+          <ul class="space-y-2.5 text-sm text-brand-ivory/80">
+            <li><a href="#solutions" onclick="openProductModal('business')" class="hover:text-brand-gold transition-colors">CartePro Business</a></li>
+            <li><a href="#solutions" onclick="openProductModal('table')" class="hover:text-brand-gold transition-colors">CartePro Table & Counter</a></li>
+            <li><a href="#solutions" onclick="openProductModal('digital')" class="hover:text-brand-gold transition-colors">CartePro Digital</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Direct WhatsApp Contact & Language Selector -->
+        <div class="lg:col-span-2 space-y-4">
+          <h3 class="text-xs font-bold uppercase tracking-widest text-brand-gold" data-i18n="footer_contact_title">Contact Direct</h3>
+          <a href="https://wa.me/212669256706" target="_blank" rel="noopener noreferrer" data-wa-context="general" class="inline-flex items-center gap-2 text-sm text-brand-ivory hover:text-brand-gold transition-colors">
+            <svg class="w-4 h-4 text-brand-gold shrink-0 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.625.846 5.059 2.284 7.033l-1.492 5.451 5.603-1.47c1.903 1.258 4.179 1.986 6.605 1.986 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/></svg>
+            <span dir="ltr">+212 669 256 706</span>
+          </a>
+
+          <!-- Footer Language Switcher -->
+          <div class="pt-2">
+            <p class="text-[11px] uppercase tracking-wider text-brand-ivory/60 mb-2" data-i18n="footer_lang_label">Langue</p>
+            <div class="inline-flex items-center bg-brand-green border border-brand-gold/30 rounded-full p-1 text-xs font-semibold">
+              <button type="button" onclick="setLanguage('fr')" data-lang-btn="fr" class="lang-btn px-2.5 py-1 rounded-full transition-all bg-brand-gold text-brand-deep">FR</button>
+              <button type="button" onclick="setLanguage('ar')" data-lang-btn="ar" class="lang-btn px-2.5 py-1 rounded-full transition-all text-brand-ivory/80 hover:text-brand-gold font-arabic">العربية</button>
+              <button type="button" onclick="setLanguage('en')" data-lang-btn="en" class="lang-btn px-2.5 py-1 rounded-full transition-all text-brand-ivory/80 hover:text-brand-gold">EN</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Copyright Bar -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-brand-ivory/60">
+        <p>© <span id="current-year">2026</span> CartePro. <span data-i18n="footer_rights">Tous droits réservés.</span></p>
+        <p data-i18n="footer_market">Maroc • NFC • QR Code • Profil Digital Personnalisé</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       PRODUCT DETAIL MODAL (Interactive Solution Drawer for the 3 Products)
+       Ensures every "Découvrir la solution en détail" button has rich functionality
+       ========================================================================== -->
+  <div id="product-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-black/70 backdrop-blur-sm" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="bg-brand-ivory text-brand-green rounded-3xl max-w-xl w-full p-6 sm:p-8 border-2 border-brand-gold shadow-luxury-dark relative max-h-[90vh] overflow-y-auto">
+      <button type="button" onclick="closeProductModal()" class="absolute top-5 end-5 w-9 h-9 rounded-full bg-brand-green/10 hover:bg-brand-green hover:text-brand-ivory flex items-center justify-center transition-colors" aria-label="Fermer">
+        ✕
+      </button>
+      <span id="modal-badge" class="inline-block text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-brand-gold/30 text-brand-deep border border-brand-gold mb-3"></span>
+      <h3 id="modal-title" class="font-serif text-2xl sm:text-3xl font-bold text-brand-green"></h3>
+      <p id="modal-desc" class="mt-3 text-sm sm:text-base text-brand-green/85 leading-relaxed"></p>
+      
+      <div class="mt-5 p-4 rounded-2xl bg-white border border-brand-gold/40">
+        <h4 id="modal-list-title" class="text-xs font-bold uppercase tracking-wider text-brand-goldDark mb-2.5"></h4>
+        <ul id="modal-list" class="space-y-2 text-sm text-brand-green/90"></ul>
+      </div>
+
+      <p id="modal-note" class="mt-4 text-xs text-brand-green/70 italic"></p>
+
+      <div class="mt-6 pt-4 border-t border-brand-gold/30 flex flex-col sm:flex-row gap-3">
+        <a id="modal-wa-link" href="https://wa.me/212669256706" target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-2 bg-gold-gradient text-brand-deep font-bold text-sm py-3.5 px-6 rounded-full shadow-gold-glow">
+          <span data-i18n="prod_cta_info">Demander des informations</span>
+        </a>
+        <button type="button" onclick="closeProductModal()" class="px-6 py-3.5 rounded-full border border-brand-green/30 text-xs font-semibold text-brand-green hover:bg-brand-green/5" data-i18n="modal_close">
+          Fermer
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MULTILINGUAL (FR / AR / EN), RTL & WHATSAPP JAVASCRIPT ENGINE
+       ========================================================================== -->
+  <script>
+    /**
+     * OFFICIAL WHATSAPP CONFIGURATION
+     * Number: +212 669 256 706
+     */
+    const WHATSAPP_NUMBER = "212669256706";
+
+    /**
+     * Prefilled WhatsApp messages per language and context.
+     * Easily editable in one place.
+     */
+    const WHATSAPP_MESSAGES = {
+      fr: {
+        general: "Bonjour CartePro, je souhaite découvrir vos solutions professionnelles.",
+        business: "Bonjour CartePro, je souhaite demander des informations sur la solution CartePro Business (carte de visite NFC + QR Code + profil digital).",
+        table: "Bonjour CartePro, je souhaite demander des informations sur la solution CartePro Table & Counter pour mon établissement.",
+        digital: "Bonjour CartePro, je souhaite demander des informations sur la solution CartePro Digital (profil digital professionnel)."
+      },
+      ar: {
+        general: "السلام عليكم CartePro، بغيت نتعرف على الحلول المهنية ديالكم.",
+        business: "السلام عليكم CartePro، أود الاستفسار حول حل CartePro Business (بطاقة زيارة NFC + رمز QR + ملف رقمي مخصص).",
+        table: "السلام عليكم CartePro، أود الاستفسار حول حل CartePro Table & Counter المخصص للطاولات والاستقبال.",
+        digital: "السلام عليكم CartePro، أود الاستفسار حول حل CartePro Digital (الملف المهني الرقمي)."
+      },
+      en: {
+        general: "Hello CartePro, I would like to learn more about your professional solutions.",
+        business: "Hello CartePro, I would like to request information about CartePro Business (customized NFC business card + QR Code + digital profile).",
+        table: "Hello CartePro, I would like to request information about CartePro Table & Counter for my establishment.",
+        digital: "Hello CartePro, I would like to request information about CartePro Digital (standalone professional digital profile)."
+      }
+    };
+
+    /**
+     * COMPLETE TRILINGUAL DICTIONARY (FR / AR / EN)
+     */
+    const TRANSLATIONS = {
+      fr: {
+        meta_title: "CartePro Maroc — Votre identité professionnelle, autrement | Carte NFC, QR Code & Profil Digital",
+        meta_desc: "CartePro vous aide à présenter votre activité, partager vos informations et valoriser votre image au Maroc grâce à des solutions NFC, QR Code et profils digitaux personnalisés.",
+        brand_slogan: "Votre identité professionnelle, autrement.",
+        nav_home: "Accueil",
+        nav_solutions: "Nos solutions",
+        nav_why: "Pourquoi CartePro ?",
+        nav_how: "Fonctionnement",
+        nav_custom: "Sur-mesure",
+        nav_who: "Pour qui ?",
+        hero_pill: "NFC • QR Code • Profil digital personnalisé",
+        hero_title_1: "Votre identité professionnelle,",
+        hero_title_2: "autrement.",
+        hero_subtitle: "Bien plus qu’une carte de visite. Une nouvelle façon de présenter votre activité.",
+        hero_desc: "CartePro vous aide à présenter votre activité, partager vos informations et valoriser votre image grâce à des solutions NFC, QR Code et profils digitaux personnalisés.",
+        hero_cta_primary: "Nous contacter sur WhatsApp",
+        hero_cta_secondary: "Découvrir nos solutions",
+        hero_feat1_title: "Technologie NFC",
+        hero_feat2_title: "QR Code intégré",
+        hero_feat3_title: "Profil sur-mesure",
+        hero_badge_1: "Design 100% personnalisé",
+        hero_badge_2: "Sans application requise",
+        hero_badge_3: "Conçu pour le Maroc",
+        mockup_phone_title: "Votre Profil Professionnel",
+        mockup_phone_sub: "Profil Digital Personnalisé",
+        mockup_row_call: "Appeler",
+        mockup_row_wa: "WhatsApp",
+        mockup_row_email: "Email",
+        mockup_row_location: "Localisation",
+        mockup_row_website: "Site Web",
+        mockup_btn_activity: "Votre activité",
+        mockup_btn_contacts: "Contacts",
+        mockup_btn_services: "Services",
+        mockup_btn_links: "Liens utiles",
+        mockup_save_contact: "Enregistrer le contact",
+        demo_mockup_badge: "Maquette de démonstration",
+        solutions_eyebrow: "Gamme Officielle",
+        solutions_title: "Nos solutions",
+        solutions_subtitle: "Trois solutions complémentaires conçues pour s’adapter à votre métier, votre identité visuelle et vos besoins d’échange professionnel.",
+        benefit_label: "Bénéfice principal",
+        prod_cta_info: "Demander des informations",
+        prod_cta_preview: "Découvrir la solution en détail",
+        prod1_mockup_tag: "Votre Logo & Marque",
+        prod1_mockup_sub: "Design personnalisé à votre image",
+        prod1_badge: "Carte Physique + Digital",
+        prod1_desc: "Une solution complète de carte de visite professionnelle en PVC personnalisé, intégrant la technologie NFC, un QR Code et votre profil digital sur-mesure.",
+        prod1_benefit: "Partagez instantanément vos coordonnées et valorisez votre propre identité visuelle à chaque rencontre.",
+        prod1_feat_1: "Carte de visite PVC personnalisée à votre marque",
+        prod1_feat_2: "Technologie sans contact NFC & QR Code intégré",
+        prod1_feat_3: "Profil digital professionnel personnalisé",
+        prod2_mockup_brand: "Votre Établissement",
+        prod2_mockup_title: "Menu & Informations",
+        prod2_mockup_sub: "Wi-Fi • Contact • Liens",
+        prod2_badge: "Tables, Comptoirs & Accueil",
+        prod2_desc: "Supports NFC et QR Code personnalisés conçus pour les restaurants, cafés, hôtels, commerces, comptoirs professionnels et espaces d’accueil.",
+        prod2_benefit: "Offrez à vos clients et visiteurs un accès immédiat à vos informations utiles directement sur table ou au comptoir.",
+        prod2_examples_title: "Exemples d’utilisations personnalisables :",
+        prod2_feat_1: "Menu digital ou catalogue de prestations",
+        prod2_feat_2: "Informations Wi-Fi, horaires et coordonnées",
+        prod2_feat_3: "Informations de l’établissement et liens utiles aux clients",
+        prod3_badge: "Sans Support Physique",
+        prod3_desc: "Un profil professionnel digital personnalisé et autonome, accessible via un lien dédié ou QR Code, sans carte PVC ni support NFC physique.",
+        prod3_benefit: "Disposez d’une présentation digitale élégante à partager en ligne (WhatsApp, signatures, réseaux) selon vos besoins.",
+        prod3_examples_title: "Contenus adaptables selon vos besoins :",
+        prod3_feat_1: "Présentation de votre activité et de vos services",
+        prod3_feat_2: "Coordonnées professionnelles et prise de contact",
+        prod3_feat_3: "Liens utiles et informations pratiques centralisées",
+        why_eyebrow: "Valeur Ajoutée",
+        why_title: "Pourquoi choisir CartePro ?",
+        why_main_msg: "« Bien plus qu’une carte de visite. Une nouvelle façon de présenter votre activité. »",
+        why_support_msg: "Une image professionnelle plus forte. Un partage plus simple. Une présence digitale adaptée à votre activité.",
+        why_editorial_body: "CartePro ne se limite pas à un support technologique. Nous concevons une expérience professionnelle cohérente qui associe l’élégance d’un support physique ou digital à la simplicité d’accès sur smartphone.",
+        why_cta_link: "Échanger avec notre équipe sur WhatsApp",
+        why_b1_title: "Une image professionnelle valorisée",
+        why_b1_desc: "Soignez la première impression auprès de vos interlocuteurs avec une présentation moderne, élégante et fidèle à l’identité de votre activité.",
+        why_b2_title: "Un partage simple et rapide",
+        why_b2_desc: "Un simple rapprochement NFC ou un scan QR Code suffit pour transmettre vos coordonnées, sans saisie manuelle ni application dédiée.",
+        why_b3_title: "Des informations centralisées",
+        why_b3_desc: "Regroupez sur un seul espace clair vos coordonnées, votre présentation, vos horaires, votre localisation et vos liens professionnels.",
+        why_b4_title: "Une solution personnalisée",
+        why_b4_desc: "Chaque carte, support ou profil digital est conçu autour de votre métier, de votre charte graphique et des besoins propres à votre structure.",
+        why_b5_title: "Une présence digitale moderne",
+        why_b5_desc: "Une identité professionnelle pensée pour accompagner l’évolution de votre activité, selon les modalités de service convenues.",
+        how_eyebrow: "Simplicité & Fluidité",
+        how_title: "Comment ça fonctionne ?",
+        how_subtitle: "Une expérience immédiate et intuitive pour vos interlocuteurs, directement depuis leur smartphone.",
+        how_s1_title: "Approchez",
+        how_s1_desc: "Approchez votre smartphone de la carte ou du support NFC.",
+        how_s2_title: "Ouverture directe",
+        how_s2_desc: "Le profil digital s’ouvre directement dans le navigateur du téléphone.",
+        how_s3_title: "Consultez",
+        how_s3_desc: "Consultez les informations disponibles : activité, services, coordonnées et liens.",
+        how_s4_title: "Enregistrez & Partagez",
+        how_s4_desc: "Enregistrez ou partagez les informations utiles en toute simplicité.",
+        how_qr_title: "Accès alternatif par QR Code intégré",
+        how_qr_desc: "Pour les appareils ne disposant pas du NFC activé, le QR Code imprimé sur le support permet d’ouvrir exactement le même profil digital via l’appareil photo.",
+        how_qr_badge: "Double compatibilité NFC + QR",
+        custom_eyebrow: "Personnalisation Sur-Mesure",
+        custom_title: "Un profil à votre image",
+        custom_subtitle: "CartePro est le partenaire qui conçoit votre solution, mais votre carte, votre support de table et votre profil digital portent votre propre identité professionnelle.",
+        custom_distinction_badge: "Votre Marque au Premier Plan",
+        custom_distinction_title: "Votre nom, votre logo, vos couleurs et votre métier",
+        custom_distinction_desc: "Que vous soyez avocat, médecin, restaurateur ou dirigeant d’entreprise, vos supports physiques et votre profil digital sont personnalisés selon votre charte graphique et les besoins spécifiques de votre activité.",
+        custom_pillar_1: "Adapté à votre profession",
+        custom_pillar_2: "Respect de votre identité visuelle",
+        custom_pillar_3: "Rubriques choisies selon vos besoins",
+        demo_section_label: "Exemples de profils digitaux — Exemple de démonstration",
+        demo_badge: "Exemple de démonstration",
+        demo_act_call: "Appeler",
+        demo_act_map: "Itinéraire",
+        demo1_sector: "Profession Libérale",
+        demo1_name: "Cabinet Juridique",
+        demo1_role: "Avocat",
+        demo1_item_1: "À propos du cabinet",
+        demo1_item_2: "Domaines d’intervention",
+        demo1_item_3: "Horaires de réception",
+        demo1_item_4: "Nous localiser",
+        demo1_caption: "Illustration fictive d’un profil personnalisé pour un cabinet d’avocat (CartePro Business ou Digital).",
+        demo2_sector: "Restauration & Hôtellerie",
+        demo2_name: "Le Patio",
+        demo2_role: "Restaurant & Café",
+        demo2_item_1: "Menu Digital",
+        demo2_item_2: "Accès Wi-Fi Client",
+        demo2_item_3: "Galerie & Spécialités",
+        demo2_item_4: "Horaires & Informations",
+        demo2_caption: "Illustration fictive d’une interface pour restaurant accessible via le support CartePro Table & Counter.",
+        demo3_sector: "Santé & Médical",
+        demo3_name: "Cabinet Médical",
+        demo3_role: "Médecin & Soins Spécialisés",
+        demo3_item_1: "À propos du cabinet",
+        demo3_item_2: "Spécialités & Services",
+        demo3_item_3: "Horaires de consultation",
+        demo3_item_4: "Accès & Localisation",
+        demo3_caption: "Illustration fictive d’un profil professionnel médical ou dentaire (CartePro Digital ou Business).",
+        future_eyebrow: "Modernité & Transition Digitale au Maroc",
+        future_title: "Une identité professionnelle tournée vers l’avenir",
+        future_p1: "Au Maroc, les usages professionnels, l’accueil client et les échanges commerciaux évoluent rapidement vers davantage de fluidité digitale. Disposer d’une présentation claire, immédiate et accessible sur smartphone est devenu un véritable marqueur de professionnalisme.",
+        future_p2: "À l’approche d’échéances majeures et de la dynamique d’ouverture portée par l’horizon Maroc 2030, les indépendants, établissements hôteliers, restaurants et entreprises marocaines ont l’opportunité de moderniser leurs supports d’accueil et de contact avec élégance et simplicité.",
+        future_card_title: "L’excellence de l’accueil et du partage",
+        future_card_desc: "Des supports physiques durables associés à une interface digitale soignée, pensés pour répondre aux standards actuels des professionnels au Maroc.",
+        who_eyebrow: "Tous les Secteurs d’Activité",
+        who_title: "Pour qui ?",
+        who_subtitle: "CartePro accompagne les professions libérales, les établissements d’accueil, les indépendants et les entreprises à travers tout le Maroc.",
+        aud_1: "Avocats",
+        aud_2: "Médecins",
+        aud_3: "Dentistes",
+        aud_4: "Architectes",
+        aud_5: "Ingénieurs",
+        aud_6: "Entrepreneurs",
+        aud_7: "Commerçants",
+        aud_8: "Restaurants",
+        aud_9: "Cafés",
+        aud_10: "Hôtels",
+        aud_11: "Consultants",
+        aud_12: "Freelances",
+        aud_13: "Entreprises",
+        aud_14: "PME",
+        cta_title: "Prêt à présenter votre activité autrement ?",
+        cta_subtitle: "Contactez CartePro et découvrez la solution adaptée à votre activité.",
+        cta_btn: "Contactez-nous sur WhatsApp",
+        footer_desc: "Solutions modernes d’identité professionnelle combinant supports NFC personnalisés, QR Codes et profils digitaux sur-mesure au Maroc.",
+        footer_nav_title: "Navigation",
+        footer_prod_title: "Solutions",
+        footer_contact_title: "Contact Direct",
+        footer_lang_label: "Langue",
+        footer_rights: "Tous droits réservés.",
+        footer_market: "Maroc • NFC • QR Code • Profil Digital Personnalisé",
+        modal_close: "Fermer"
+      },
+
+      ar: {
+        meta_title: "CartePro المغرب — هويتكم المهنية، بشكل مختلف | بطاقة NFC، رمز QR وملف رقمي مخصص",
+        meta_desc: "تساعدكم CartePro على تقديم نشاطكم ومشاركة معلوماتكم وتعزيز صورتكم المهنية في المغرب عبر حلول NFC ورمز QR والملفات الرقمية المخصصة.",
+        brand_slogan: "هويتكم المهنية، بشكل مختلف.",
+        nav_home: "الرئيسية",
+        nav_solutions: "حلولنا",
+        nav_why: "لماذا CartePro؟",
+        nav_how: "كيف يعمل؟",
+        nav_custom: "تخصيص كامل",
+        nav_who: "لمن؟",
+        hero_pill: "NFC • رمز QR • ملف رقمي مهني مخصص",
+        hero_title_1: "هويتكم المهنية،",
+        hero_title_2: "بشكل مختلف.",
+        hero_subtitle: "أكثر من مجرد بطاقة زيارة. طريقة جديدة وعصرية لتقديم نشاطكم المهني.",
+        hero_desc: "تساعدكم CartePro على تقديم نشاطكم، مشاركة معلوماتكم وتعزيز صورتكم المهنية بفضل حلول NFC ورمز QR والملفات الرقمية المصممة حسب الطلب.",
+        hero_cta_primary: "تواصلوا معنا عبر واتساب",
+        hero_cta_secondary: "اكتشفوا حلولنا",
+        hero_feat1_title: "تقنية NFC الذكية",
+        hero_feat2_title: "رمز QR مدمج",
+        hero_feat3_title: "ملف رقمي مخصص",
+        hero_badge_1: "تصميم مخصص 100%",
+        hero_badge_2: "بدون الحاجة لأي تطبيق",
+        hero_badge_3: "مصمم للسوق المغربي",
+        mockup_phone_title: "ملفكم المهني الرقمي",
+        mockup_phone_sub: "ملف رقمي مخصص",
+        mockup_row_call: "اتصال هاتفي",
+        mockup_row_wa: "واتساب",
+        mockup_row_email: "البريد الإلكتروني",
+        mockup_row_location: "الموقع الجغرافي",
+        mockup_row_website: "الموقع الإلكتروني",
+        mockup_btn_activity: "نشاطكم المهني",
+        mockup_btn_contacts: "بيانات الاتصال",
+        mockup_btn_services: "الخدمات",
+        mockup_btn_links: "روابط مفيدة",
+        mockup_save_contact: "حفظ جهة الاتصال",
+        demo_mockup_badge: "نموذج توضيحي",
+        solutions_eyebrow: "المنتجات الرسمية",
+        solutions_title: "حلولنا المهنية",
+        solutions_subtitle: "ثلاثة حلول متكاملة مصممة لتتلاءم مع مهنتكم وهويتكم البصرية واحتياجات التواصل الخاصة بنشاطكم.",
+        benefit_label: "الميزة الأساسية",
+        prod_cta_info: "طلب معلومات عبر واتساب",
+        prod_cta_preview: "اكتشاف تفاصيل الحل",
+        prod1_mockup_tag: "شعاركم وهويتكم الخاصة",
+        prod1_mockup_sub: "تصميم يعكس علامتكم التجارية",
+        prod1_badge: "بطاقة فعلية + ملف رقمي",
+        prod1_desc: "حل متكامل لبطاقة زيارة مهنية من الـ PVC المخصص، يدمج تقنية NFC ورمز QR مع ملفكم الرقمي المهني المصمم حسب الطلب.",
+        prod1_benefit: "شاركوا بياناتكم بلمسة واحدة وعززوا حضور علامتكم الخاصة في كل لقاء مهني.",
+        prod1_feat_1: "بطاقة PVC مخصصة بالكامل بشعاركم وألوانكم",
+        prod1_feat_2: "تقنية اللاتلامس NFC ورمز QR مدمج",
+        prod1_feat_3: "ملف رقمي مهني مخصص لنشاطكم",
+        prod2_mockup_brand: "علامتكم الخاصة",
+        prod2_mockup_title: "القائمة والمعلومات",
+        prod2_mockup_sub: "واي فاي • تواصل • روابط",
+        prod2_badge: "للطاولات والمكاتب والاستقبال",
+        prod2_desc: "حوامل NFC ورمز QR مخصصة للمطاعم، المقاهي، الفنادق، المتاجر، ومكاتب الاستقبال المهنية.",
+        prod2_benefit: "امنحوا زبناءكم وزواركم وصولاً فورياً إلى المعلومات المفيدة مباشرة على الطاولة أو مكتب الاستقبال.",
+        prod2_examples_title: "أمثلة لاستخدامات قابلة للتخصيص:",
+        prod2_feat_1: "قائمة رقمية (Menu Digital) أو عرض الخدمات",
+        prod2_feat_2: "معلومات الواي فاي، أوقات العمل وبيانات الاتصال",
+        prod2_feat_3: "معلومات المؤسسة والروابط المفيدة للزبناء",
+        prod3_badge: "بدون حامل مادي",
+        prod3_desc: "ملف مهني رقمي مستقل ومخصص، يمكن الوصول إليه عبر رابط مباشر أو رمز QR، دون الحاجة إلى بطاقة بلاستيكية أو حامل NFC مادي.",
+        prod3_benefit: "احصلوا على واجهة رقمية أنيقة لمشاركتها بسهولة عبر واتساب أو البريد الإلكتروني أو شبكات التواصل.",
+        prod3_examples_title: "محتوى قابل للتكييف حسب احتياجاتكم:",
+        prod3_feat_1: "تقديم النشاط المهني والخدمات المقدمة",
+        prod3_feat_2: "بيانات التواصل المهنية وتسهيل الاتصال",
+        prod3_feat_3: "روابط مفيدة ومعلومات عملية مجمعة في مكان واحد",
+        why_eyebrow: "القيمة المضافة",
+        why_title: "لماذا اختيار CartePro؟",
+        why_main_msg: "« أكثر من مجرد بطاقة زيارة. طريقة جديدة لتقديم نشاطكم المهني. »",
+        why_support_msg: "صورة مهنية أقوى. مشاركة أسهل. حضور رقمي ملائم لنشاطكم.",
+        why_editorial_body: "لا تقتصر CartePro على بيع بطاقات تقنية، بل تصمم لكم تجربة مهنية متكاملة تجمع بين أناقة التصميم وسهولة الوصول الفوري عبر الهاتف الذكي.",
+        why_cta_link: "تحدثوا مع فريقنا عبر واتساب",
+        why_b1_title: "صورة مهنية راقية ومميزة",
+        why_b1_desc: "اتركوا انطباعاً أولياً احترافياً لدى عملائكم وشركائكم من خلال تقديم عصري وأنيق يعكس هوية نشاطكم.",
+        why_b2_title: "مشاركة بسيطة وسريعة",
+        why_b2_desc: "يكفي تقريب الهاتف عبر NFC أو مسح رمز QR لمشاركة معلوماتكم فوراً دون كتابة يدوية أو تحميل تطبيقات.",
+        why_b3_title: "معلومات مجمعة ومنظمة",
+        why_b3_desc: "اجمعوا في صفحة واحدة واضحة بيانات الاتصال، الخدمات، أوقات العمل، الموقع الجغرافي والروابط المهمة.",
+        why_b4_title: "حل مخصص على المقاس",
+        why_b4_desc: "كل بطاقة أو حامل أو ملف رقمي يتم تصميمه وفق مهنتكم وهويتكم البصرية واحتياجاتكم الفعلية.",
+        why_b5_title: "حضور رقمي عصري",
+        why_b5_desc: "هوية مهنية رقمية قابلة لمواكبة تطور نشاطكم المهني وفق شروط الخدمة المعتمدة.",
+        how_eyebrow: "سهولة وسلاسة",
+        how_title: "كيف يعمل؟",
+        how_subtitle: "تجربة استخدام فورية وبسيطة لعملائكم وشركائكم مباشرة عبر هواتفهم الذكية.",
+        how_s1_title: "قرّب الهاتف",
+        how_s1_desc: "قرّب هاتفك الذكي من البطاقة أو حامل NFC.",
+        how_s2_title: "فتح مباشر",
+        how_s2_desc: "يفتح الملف الرقمي مباشرة على متصفح الهاتف.",
+        how_s3_title: "تصفّح المعلومات",
+        how_s3_desc: "اطلع على المعلومات المتاحة: النشاط، الخدمات، بيانات التواصل والروابط.",
+        how_s4_title: "احفظ وشارك",
+        how_s4_desc: "احفظ جهة الاتصال أو شارك المعلومات المفيدة بكل سهولة.",
+        how_qr_title: "وصول بديل عبر رمز QR المدمج",
+        how_qr_desc: "بالنسبة للهواتف التي لا تدعم NFC، يتيح رمز QR المطبوع فتح نفس الملف الرقمي فوراً عبر كاميرا الهاتف.",
+        how_qr_badge: "توافق مزدوج NFC + QR",
+        custom_eyebrow: "تصميم خاص لكل عميل",
+        custom_title: "ملف رقمي وحامل يعكس هويتكم الخاصة",
+        custom_subtitle: "CartePro هي العلامة المبتكرة للحل، بينما تحمل بطاقتكم أو حاملكم أو ملفكم الرقمي اسمكم وشعاركم وهويتكم البصرية الخاصة.",
+        custom_distinction_badge: "علامتكم التجارية في الواجهة",
+        custom_distinction_title: "اسمكم، شعاركم، ألوانكم ومهنتكم",
+        custom_distinction_desc: "سواء كنتم محامين، أطباء، أصحاب مطاعم أو مسيري شركات، يتم تصميم البطاقة والملف الرقمي ليعكس هويتكم المهنية الخاصة.",
+        custom_pillar_1: "ملائم لطبيعة مهنتكم",
+        custom_pillar_2: "احترام كامل لهويتكم البصرية",
+        custom_pillar_3: "أقسام ومحتويات حسب اختياركم",
+        demo_section_label: "أمثلة لملفات رقمية — نموذج توضيحي",
+        demo_badge: "نموذج توضيحي",
+        demo_act_call: "اتصال",
+        demo_act_map: "الموقع",
+        demo1_sector: "المهن الحرة",
+        demo1_name: "مكتب محاماة واستشارات",
+        demo1_role: "محامي",
+        demo1_item_1: "نبذة عن المكتب",
+        demo1_item_2: "مجالات التخصص",
+        demo1_item_3: "أوقات الاستقبال",
+        demo1_item_4: "الموقع الجغرافي",
+        demo1_caption: "مثال افتراضي توضيحي لملف مخصص لمكتب محاماة (CartePro Business أو Digital).",
+        demo2_sector: "المطاعم والضيافة",
+        demo2_name: "لو باتيو (Le Patio)",
+        demo2_role: "مطعم ومقهى",
+        demo2_item_1: "القائمة الرقمية (Menu)",
+        demo2_item_2: "شبكة Wi-Fi للزبناء",
+        demo2_item_3: "معرض الصور والأطباق",
+        demo2_item_4: "أوقات العمل والمعلومات",
+        demo2_caption: "مثال افتراضي توضيحي لواجهة مطعم عبر حامل CartePro Table & Counter.",
+        demo3_sector: "الصحة والطب",
+        demo3_name: "عيادة طبية",
+        demo3_role: "طب عام وعلاجات متخصصة",
+        demo3_item_1: "نبذة عن العيادة",
+        demo3_item_2: "الخدمات والتخصصات",
+        demo3_item_3: "أوقات الاستشارة",
+        demo3_item_4: "العنوان والموقع",
+        demo3_caption: "مثال افتراضي توضيحي لملف مهني طبي أو عيادة أسنان (CartePro Digital أو Business).",
+        future_eyebrow: "الحداثة والتحول الرقمي في المغرب",
+        future_title: "هوية مهنية تتطلع إلى المستقبل",
+        future_p1: "يشهد المشهد المهني والتجاري في المغرب تطوراً متسارعاً نحو الرقمنة وتسهيل تبادل المعلومات. إن اعتماد واجهة رقمية أنيقة وسريعة الوصول عبر الهاتف يعكس احترافية عالية.",
+        future_p2: "وفي ظل الدينامية الاقتصادية والانفتاح الذي يشهده المغرب نحو أفق المغرب 2030، تتاح للمهنيين ومؤسسات الضيافة والشركات فرصة تحديث وسائل التواصل والاستقبال بأسلوب عصري وموثوق.",
+        future_card_title: "أسلوب راقٍ في الاستقبال والتواصل",
+        future_card_desc: "دعامات متينة وتصاميم رقمية متقنة تواكب تطلعات المهنيين والمؤسسات في السوق المغربي.",
+        who_eyebrow: "لجميع القطاعات المهنية",
+        who_title: "لمن صُممت حلول CartePro؟",
+        who_subtitle: "تواكب CartePro أصحاب المهن الحرة، مؤسسات الضيافة، المستقلين والشركات في مختلف مدن المغرب.",
+        aud_1: "محامون",
+        aud_2: "أطباء",
+        aud_3: "أطباء أسنان",
+        aud_4: "مهندسون معماريون",
+        aud_5: "مهندسون",
+        aud_6: "مقاولون",
+        aud_7: "تجار",
+        aud_8: "مطاعم",
+        aud_9: "مقاهي",
+        aud_10: "فنادق",
+        aud_11: "مستشارون",
+        aud_12: "مستقلون (Freelances)",
+        aud_13: "شركات",
+        aud_14: "مقاولات صغرى ومتوسطة",
+        cta_title: "هل أنتم مستعدون لتقديم نشاطكم بشكل مختلف؟",
+        cta_subtitle: "تواصلوا مع CartePro واكتشفوا الحل الأنسب لنشاطكم المهني.",
+        cta_btn: "تواصلوا معنا عبر واتساب",
+        footer_desc: "حلول عصرية للهوية المهنية تجمع بين بطاقات وحوامل NFC المخصصة، رموز QR والملفات الرقمية في المغرب.",
+        footer_nav_title: "روابط سريعة",
+        footer_prod_title: "الحلول",
+        footer_contact_title: "تواصل مباشر",
+        footer_lang_label: "اللغة",
+        footer_rights: "جميع الحقوق محفوظة.",
+        footer_market: "المغرب • NFC • رمز QR • ملف رقمي مخصص",
+        modal_close: "إغلاق"
+      },
+
+      en: {
+        meta_title: "CartePro Morocco — Your professional identity, reimagined | NFC Cards, QR Code & Digital Profiles",
+        meta_desc: "CartePro helps you showcase your business, share your information, and elevate your professional image in Morocco with customized NFC, QR Code, and digital profile solutions.",
+        brand_slogan: "Your professional identity, reimagined.",
+        nav_home: "Home",
+        nav_solutions: "Solutions",
+        nav_why: "Why CartePro?",
+        nav_how: "How It Works",
+        nav_custom: "Customization",
+        nav_who: "Who Is It For?",
+        hero_pill: "NFC • QR Code • Personalized Digital Profile",
+        hero_title_1: "Your professional identity,",
+        hero_title_2: "reimagined.",
+        hero_subtitle: "Much more than a business card. A modern way to present your activity.",
+        hero_desc: "CartePro helps you present your business, share your contact information, and enhance your brand image through customized NFC, QR Code, and digital profile solutions.",
+        hero_cta_primary: "Contact us on WhatsApp",
+        hero_cta_secondary: "Explore our solutions",
+        hero_feat1_title: "NFC Technology",
+        hero_feat2_title: "Integrated QR Code",
+        hero_feat3_title: "Custom Digital Profile",
+        hero_badge_1: "100% custom-branded design",
+        hero_badge_2: "No app required",
+        hero_badge_3: "Designed for Morocco",
+        mockup_phone_title: "Your Professional Profile",
+        mockup_phone_sub: "Personalized Digital Profile",
+        mockup_row_call: "Call",
+        mockup_row_wa: "WhatsApp",
+        mockup_row_email: "Email",
+        mockup_row_location: "Location",
+        mockup_row_website: "Website",
+        mockup_btn_activity: "Your Activity",
+        mockup_btn_contacts: "Contact Details",
+        mockup_btn_services: "Services",
+        mockup_btn_links: "Useful Links",
+        mockup_save_contact: "Save Contact",
+        demo_mockup_badge: "Demonstration Mockup",
+        solutions_eyebrow: "Official Product Line",
+        solutions_title: "Our Solutions",
+        solutions_subtitle: "Three complementary solutions tailored to your profession, your visual identity, and your daily business interactions.",
+        benefit_label: "Key Benefit",
+        prod_cta_info: "Request Information",
+        prod_cta_preview: "Explore solution details",
+        prod1_mockup_tag: "Your Logo & Brand",
+        prod1_mockup_sub: "Custom-designed to match your identity",
+        prod1_badge: "Physical Card + Digital Profile",
+        prod1_desc: "A complete professional PVC business card solution combining contactless NFC technology, an integrated QR Code, and your personalized digital profile.",
+        prod1_benefit: "Share your details effortlessly and showcase your own visual identity at every professional meeting.",
+        prod1_feat_1: "Custom PVC business card tailored to your brand",
+        prod1_feat_2: "Contactless NFC technology & integrated QR Code",
+        prod1_feat_3: "Personalized professional digital profile",
+        prod2_mockup_brand: "Your Establishment",
+        prod2_mockup_title: "Menu & Information",
+        prod2_mockup_sub: "Wi-Fi • Contact • Links",
+        prod2_badge: "Tables, Counters & Reception",
+        prod2_desc: "Customized NFC and QR Code stands designed for restaurants, cafés, hotels, retail shops, professional counters, and reception areas.",
+        prod2_benefit: "Give your guests and visitors instant access to helpful information right at the table or reception desk.",
+        prod2_examples_title: "Examples of customizable uses:",
+        prod2_feat_1: "Digital menu or service directory",
+        prod2_feat_2: "Wi-Fi details, opening hours, and contact info",
+        prod2_feat_3: "Establishment information and relevant customer links",
+        prod3_badge: "No Physical Hardware Required",
+        prod3_desc: "A standalone personalized digital professional profile accessible via direct link or QR Code, without requiring a PVC card or physical NFC stand.",
+        prod3_benefit: "Enjoy a refined digital presentation ready to share via WhatsApp, email signatures, or online channels.",
+        prod3_examples_title: "Adaptable content based on your needs:",
+        prod3_feat_1: "Presentation of your professional activity and services",
+        prod3_feat_2: "Direct contact details and location access",
+        prod3_feat_3: "Centralized useful links and practical business info",
+        why_eyebrow: "Value Proposition",
+        why_title: "Why Choose CartePro?",
+        why_main_msg: "“Much more than a business card. A modern way to present your activity.”",
+        why_support_msg: "A stronger professional image. Simpler sharing. A digital presence tailored to your business.",
+        why_editorial_body: "CartePro goes beyond NFC hardware. We craft a cohesive professional experience that pairs bespoke physical or digital presentation with effortless smartphone access.",
+        why_cta_link: "Chat with our team on WhatsApp",
+        why_b1_title: "An elevated professional image",
+        why_b1_desc: "Make a lasting impression with a modern, refined presentation that stays true to your visual identity.",
+        why_b2_title: "Simple and instant sharing",
+        why_b2_desc: "A single NFC tap or QR Code scan shares your information immediately—no manual typing or app download needed.",
+        why_b3_title: "Centralized essential information",
+        why_b3_desc: "Bring together your contact details, services, opening hours, location, and key links in one structured space.",
+        why_b4_title: "A personalized solution",
+        why_b4_desc: "Every card, table support, and digital profile is crafted around your profession, brand guidelines, and specific needs.",
+        why_b5_title: "A modern digital presence",
+        why_b5_desc: "A professional identity designed to evolve alongside your business activity, subject to applicable service terms.",
+        how_eyebrow: "Seamless Experience",
+        how_title: "How Does It Work?",
+        how_subtitle: "An intuitive, instant experience for your clients and contacts right from their smartphone.",
+        how_s1_title: "Tap or Scan",
+        how_s1_desc: "Bring a smartphone close to the NFC card or table stand.",
+        how_s2_title: "Instant Opening",
+        how_s2_desc: "Your personalized digital profile opens directly in the phone’s browser.",
+        how_s3_title: "Explore",
+        how_s3_desc: "View available details: business activity, services, contacts, and links.",
+        how_s4_title: "Save & Share",
+        how_s4_desc: "Easily save contact details or share useful business information.",
+        how_qr_title: "Alternative access via integrated QR Code",
+        how_qr_desc: "For smartphones without NFC enabled, scanning the printed QR Code with the camera opens the exact same digital profile.",
+        how_qr_badge: "Dual NFC + QR Compatibility",
+        custom_eyebrow: "Tailored to Your Brand",
+        custom_title: "A Profile Designed in Your Image",
+        custom_subtitle: "CartePro is the brand behind the solution, while your physical card, table stand, and digital profile showcase your own professional identity.",
+        custom_distinction_badge: "Your Identity First",
+        custom_distinction_title: "Your name, your logo, your colors, and your profession",
+        custom_distinction_desc: "Whether you are an attorney, physician, restaurateur, or company executive, your physical supports and digital profile are customized to reflect your own branding.",
+        custom_pillar_1: "Tailored to your profession",
+        custom_pillar_2: "Aligned with your visual identity",
+        custom_pillar_3: "Sections selected for your needs",
+        demo_section_label: "Digital Profile Previews — Demonstration Example",
+        demo_badge: "Demonstration Example",
+        demo_act_call: "Call",
+        demo_act_map: "Directions",
+        demo1_sector: "Legal & Liberal Professions",
+        demo1_name: "Law Practice",
+        demo1_role: "Attorney at Law",
+        demo1_item_1: "About the Practice",
+        demo1_item_2: "Practice Areas",
+        demo1_item_3: "Office Hours",
+        demo1_item_4: "Office Location",
+        demo1_caption: "Fictional demonstration example of a customized legal profile (CartePro Business or Digital).",
+        demo2_sector: "Hospitality & Dining",
+        demo2_name: "Le Patio",
+        demo2_role: "Restaurant & Café",
+        demo2_item_1: "Digital Menu",
+        demo2_item_2: "Guest Wi-Fi Access",
+        demo2_item_3: "Gallery & Specialties",
+        demo2_item_4: "Opening Hours & Info",
+        demo2_caption: "Fictional demonstration example of a restaurant interface via CartePro Table & Counter.",
+        demo3_sector: "Healthcare & Medical",
+        demo3_name: "Medical Practice",
+        demo3_role: "Physician & Specialist Care",
+        demo3_item_1: "About the Clinic",
+        demo3_item_2: "Medical Services",
+        demo3_item_3: "Consultation Hours",
+        demo3_item_4: "Location & Access",
+        demo3_caption: "Fictional demonstration example of a medical or dental profile (CartePro Digital or Business).",
+        future_eyebrow: "Modernity & Digital Evolution in Morocco",
+        future_title: "A Forward-Looking Professional Identity",
+        future_p1: "Across Morocco, professional interactions, guest reception, and commercial exchanges are rapidly embracing digital convenience. Providing a clear, smartphone-ready presentation has become a natural hallmark of modern professionalism.",
+        future_p2: "With the momentum and international openness surrounding the Maroc 2030 horizon, independent professionals, hospitality venues, and Moroccan businesses have a timely opportunity to modernize how they welcome and connect with clients.",
+        future_card_title: "Excellence in Reception & Sharing",
+        future_card_desc: "Durable physical supports paired with a refined digital interface, crafted for modern Moroccan professionals.",
+        who_eyebrow: "Across Professional Sectors",
+        who_title: "Who Is It For?",
+        who_subtitle: "CartePro supports independent professionals, hospitality establishments, retailers, and companies across Morocco.",
+        aud_1: "Lawyers",
+        aud_2: "Doctors",
+        aud_3: "Dentists",
+        aud_4: "Architects",
+        aud_5: "Engineers",
+        aud_6: "Entrepreneurs",
+        aud_7: "Retailers",
+        aud_8: "Restaurants",
+        aud_9: "Cafés",
+        aud_10: "Hotels",
+        aud_11: "Consultants",
+        aud_12: "Freelancers",
+        aud_13: "Corporations",
+        aud_14: "SMEs",
+        cta_title: "Ready to present your activity differently?",
+        cta_subtitle: "Contact CartePro and discover the solution tailored to your business.",
+        cta_btn: "Contact us on WhatsApp",
+        footer_desc: "Modern professional identity solutions combining customized NFC products, QR Codes, and tailored digital profiles in Morocco.",
+        footer_nav_title: "Navigation",
+        footer_prod_title: "Solutions",
+        footer_contact_title: "Direct Contact",
+        footer_lang_label: "Language",
+        footer_rights: "All rights reserved.",
+        footer_market: "Morocco • NFC • QR Code • Personalized Digital Profile",
+        modal_close: "Close"
+      }
+    };
+
+    /**
+     * MODAL PRODUCT DETAILS DICTIONARY
+     */
+    const MODAL_DETAILS = {
+      business: {
+        fr: {
+          badge: "CartePro Business",
+          title: "Carte de visite professionnelle NFC + QR Code + Profil Digital",
+          desc: "CartePro Business associe une carte en PVC personnalisée à l’identité de votre structure et un profil digital professionnel accessible par simple contact NFC ou scan QR Code.",
+          listTitle: "Ce que comprend la solution :",
+          items: [
+            "Carte PVC personnalisée avec votre logo, votre nom et votre identité visuelle",
+            "Puce sans contact NFC intégrée et QR Code imprimé haute lisibilité",
+            "Profil digital personnalisé présentant votre activité, vos coordonnées et vos liens",
+            "Partage rapide sur smartphone sans application requise"
+          ],
+          note: "Note : La carte présentée avec le logo CartePro sur ce site est une maquette de démonstration. Votre carte est réalisée aux couleurs de votre propre activité."
+        },
+        ar: {
+          badge: "CartePro Business",
+          title: "بطاقة زيارة مهنية NFC + رمز QR + ملف رقمي مخصص",
+          desc: "يجمع حل CartePro Business بين بطاقة PVC مخصصة بالكامل لهويتكم البصرية وملف رقمي مهني يفتح بلمسة NFC أو عبر مسح رمز QR.",
+          listTitle: "مكونات الحل:",
+          items: [
+            "بطاقة PVC مخصصة بشعاركم واسمكم وهويتكم البصرية الخاصة",
+            "شريحة NFC مدمجة ورمز QR واضح لسهولة الوصول",
+            "ملف رقمي مخصص يعرض نشاطكم وبيانات الاتصال والروابط المهنية",
+            "مشاركة فورية على الهواتف الذكية دون الحاجة لتطبيق"
+          ],
+          note: "ملاحظة: البطاقة التي تحمل شعار CartePro في الموقع هي نموذج عرض فقط؛ بطاقتكم تُصمم بهويتكم الخاصة."
+        },
+        en: {
+          badge: "CartePro Business",
+          title: "Professional NFC Business Card + QR Code + Digital Profile",
+          desc: "CartePro Business pairs a custom-designed PVC card bearing your visual identity with a tailored digital profile accessible via NFC tap or QR scan.",
+          listTitle: "What’s included:",
+          items: [
+            "Customized PVC card featuring your own logo, name, and brand colors",
+            "Embedded contactless NFC chip and high-contrast printed QR Code",
+            "Personalized digital profile showcasing your activity, contacts, and links",
+            "Seamless sharing on smartphones with no app installation required"
+          ],
+          note: "Note: The CartePro-branded card shown on this website is a demonstration mockup. Your card is custom-branded for your own business."
+        }
+      },
+      table: {
+        fr: {
+          badge: "CartePro Table & Counter",
+          title: "Supports NFC personnalisés pour tables, comptoirs et espaces d’accueil",
+          desc: "Conçu pour les restaurants, cafés, hôtels, commerces et comptoirs professionnels souhaitant offrir un accès immédiat à leurs informations utiles.",
+          listTitle: "Exemples d’utilisations personnalisables selon vos besoins :",
+          items: [
+            "Consultation du menu digital ou de la carte des prestations",
+            "Partage des informations Wi-Fi et horaires d’ouverture",
+            "Accès rapide aux coordonnées et à la localisation de l’établissement",
+            "Mise à disposition de liens utiles destinés à vos clients ou visiteurs"
+          ],
+          note: "Note : Les fonctionnalités et rubriques sont configurées sur-mesure selon les besoins réels de chaque établissement."
+        },
+        ar: {
+          badge: "CartePro Table & Counter",
+          title: "حوامل NFC مخصصة للطاولات والمكاتب وفضاءات الاستقبال",
+          desc: "مصممة للمطاعم، المقاهي، الفنادق، المتاجر ومكاتب الاستقبال المهنية لتوفير وصول سريع وأنيق للمعلومات الموجهة للزبناء.",
+          listTitle: "أمثلة لاستخدامات ممكنة حسب احتياجاتكم:",
+          items: [
+            "عرض القائمة الرقمية (Menu Digital) أو قائمة الخدمات",
+            "مشاركة معلومات شبكة Wi-Fi وأوقات العمل",
+            "تسهيل الوصول لبيانات الاتصال والموقع الجغرافي للمؤسسة",
+            "توفير روابط مفيدة موجهة لزبنائكم وزواركم"
+          ],
+          note: "ملاحظة: يتم تحديد المحتوى والخصائص حسب الطلب ووفق الاحتياجات الخاصة بكل مؤسسة."
+        },
+        en: {
+          badge: "CartePro Table & Counter",
+          title: "Customized NFC Stands for Tables, Counters & Reception Areas",
+          desc: "Built for restaurants, cafés, hotels, retail stores, and reception desks looking to give guests immediate access to customer-facing digital information.",
+          listTitle: "Examples of possible customized configurations:",
+          items: [
+            "Digital menu or service catalog display",
+            "Guest Wi-Fi credentials and opening hours",
+            "Establishment contact details and map directions",
+            "Relevant customer-facing links tailored to your venue"
+          ],
+          note: "Note: Features and sections are configured as customized examples based on each establishment’s specific requirements."
+        }
+      },
+      digital: {
+        fr: {
+          badge: "CartePro Digital",
+          title: "Profil professionnel digital personnalisé (sans support physique)",
+          desc: "Une solution 100% digitale vous permettant de présenter votre activité, vos services et vos coordonnées via un lien professionnel et un QR Code, sans carte PVC ni support physique.",
+          listTitle: "Exemples de contenus selon vos besoins :",
+          items: [
+            "Présentation claire de votre activité, cabinet ou entreprise",
+            "Boutons d’appel direct, WhatsApp, email et localisation",
+            "Mise en avant de vos services, horaires et liens professionnels",
+            "Partage simple par lien direct sur WhatsApp, réseaux ou signatures"
+          ],
+          note: "Note : Le contenu du profil est défini sur-mesure selon les besoins de chaque professionnel ou entreprise."
+        },
+        ar: {
+          badge: "CartePro Digital",
+          title: "ملف مهني رقمي مخصص (بدون حامل مادي)",
+          desc: "حل رقمي بالكامل يتيح لكم تقديم نشاطكم المهني وخدماتكم وبيانات الاتصال عبر رابط مخصص ورمز QR، دون الحاجة لبطاقة PVC أو حامل NFC مادي.",
+          listTitle: "أمثلة للمحتويات الممكنة حسب احتياجاتكم:",
+          items: [
+            "تقديم واضح لنشاطكم المهني أو مكتبكم أو شركتكم",
+            "أزرار اتصال مباشر، واتساب، بريد إلكتروني وموقع جغرافي",
+            "عرض الخدمات وأوقات العمل والروابط المهنية المفيدة",
+            "سهولة المشاركة عبر رابط مباشر في واتساب أو الرسائل"
+          ],
+          note: "ملاحظة: يتم إعداد محتويات الملف الرقمي حسب احتياجات كل مهني أو مؤسسة."
+        },
+        en: {
+          badge: "CartePro Digital",
+          title: "Standalone Personalized Digital Professional Profile",
+          desc: "A 100% digital solution to present your professional activity, services, and contact details via a dedicated link and QR Code—without requiring a PVC card or physical NFC support.",
+          listTitle: "Possible profile content based on your needs:",
+          items: [
+            "Clear presentation of your practice, consultancy, or business",
+            "One-tap actions for phone call, WhatsApp, email, and directions",
+            "Overview of your services, business hours, and useful links",
+            "Easy online sharing via WhatsApp, messages, or email signatures"
+          ],
+          note: "Note: Profile sections are customized according to each customer’s specific professional needs."
+        }
+      }
+    };
+
+    let currentLang = "fr";
+    let activeModalProduct = null;
+
+    /**
+     * Build a full WhatsApp URL with URL-encoded prefilled message
+     */
+    function buildWhatsAppUrl(lang, context) {
+      const langPack = WHATSAPP_MESSAGES[lang] || WHATSAPP_MESSAGES.fr;
+      const message = langPack[context] || langPack.general;
+      return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+    }
+
+    /**
+     * Update all WhatsApp links across the page for the active language
+     */
+    function updateAllWhatsAppLinks(lang) {
+      const waElements = document.querySelectorAll("[data-wa-context]");
+      waElements.forEach((el) => {
+        const ctx = el.getAttribute("data-wa-context") || "general";
+        el.setAttribute("href", buildWhatsAppUrl(lang, ctx));
+      });
+    }
+
+    /**
+     * Switch website language (FR / AR / EN) & handle RTL layout
+     */
+    function setLanguage(lang) {
+      if (!TRANSLATIONS[lang]) return;
+      currentLang = lang;
+      const dict = TRANSLATIONS[lang];
+
+      // 1. Update HTML lang and dir attributes (RTL for Arabic, LTR for French/English)
+      const htmlEl = document.documentElement;
+      htmlEl.setAttribute("lang", lang);
+      htmlEl.setAttribute("dir", lang === "ar" ? "rtl" : "ltr");
+
+      // 2. Update all elements with [data-i18n]
+      const translatableElements = document.querySelectorAll("[data-i18n]");
+      translatableElements.forEach((el) => {
+        const key = el.getAttribute("data-i18n");
+        if (dict[key]) {
+          el.textContent = dict[key];
+        }
+      });
+
+      // 3. Update SEO Title & Meta Descriptions
+      document.title = dict.meta_title;
+      const metaDesc = document.getElementById("meta-desc");
+      if (metaDesc) metaDesc.setAttribute("content", dict.meta_desc);
+      const ogTitle = document.getElementById("og-title");
+      if (ogTitle) ogTitle.setAttribute("content", dict.meta_title);
+      const ogDesc = document.getElementById("og-desc");
+      if (ogDesc) ogDesc.setAttribute("content", dict.meta_desc);
+
+      // 4. Update active visual state on language switcher buttons (Header + Footer)
+      const langBtns = document.querySelectorAll("[data-lang-btn]");
+      langBtns.forEach((btn) => {
+        const btnLang = btn.getAttribute("data-lang-btn");
+        if (btnLang === lang) {
+          btn.classList.add("bg-brand-gold", "text-brand-deep", "shadow-sm");
+          btn.classList.remove("text-brand-ivory/80", "text-brand-ivory/85");
+        } else {
+          btn.classList.remove("bg-brand-gold", "text-brand-deep", "shadow-sm");
+          btn.classList.add("text-brand-ivory/85");
+        }
+      });
+
+      // 5. Update all WhatsApp prefilled links
+      updateAllWhatsAppLinks(lang);
+
+      // 6. If product modal is open, refresh its content in the new language
+      if (activeModalProduct) {
+        renderProductModalContent(activeModalProduct);
+      }
+    }
+
+    /**
+     * Product Detail Modal Controls
+     */
+    function renderProductModalContent(productKey) {
+      const productData = MODAL_DETAILS[productKey];
+      if (!productData) return;
+      const content = productData[currentLang] || productData.fr;
+
+      document.getElementById("modal-badge").textContent = content.badge;
+      document.getElementById("modal-title").textContent = content.title;
+      document.getElementById("modal-desc").textContent = content.desc;
+      document.getElementById("modal-list-title").textContent = content.listTitle;
+      document.getElementById("modal-note").textContent = content.note;
+
+      const listEl = document.getElementById("modal-list");
+      listEl.innerHTML = "";
+      content.items.forEach((item) => {
+        const li = document.createElement("li");
+        li.className = "flex items-start gap-2.5";
+        li.innerHTML = `<svg class="w-4 h-4 text-brand-goldDark shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg><span>${item}</span>`;
+        listEl.appendChild(li);
+      });
+
+      const modalWaLink = document.getElementById("modal-wa-link");
+      modalWaLink.setAttribute("href", buildWhatsAppUrl(currentLang, productKey));
+    }
+
+    function openProductModal(productKey) {
+      activeModalProduct = productKey;
+      renderProductModalContent(productKey);
+      const modal = document.getElementById("product-modal");
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
+    }
+
+    function closeProductModal() {
+      activeModalProduct = null;
+      const modal = document.getElementById("product-modal");
+      modal.classList.add("hidden");
+      modal.classList.remove("flex");
+    }
+
+    /**
+     * Mobile Navigation Controls
+     */
+    function toggleMobileMenu() {
+      const menu = document.getElementById("mobile-menu");
+      const openIcon = document.getElementById("menu-icon-open");
+      const closeIcon = document.getElementById("menu-icon-close");
+      const isHidden = menu.classList.contains("hidden");
+      if (isHidden) {
+        menu.classList.remove("hidden");
+        openIcon.classList.add("hidden");
+        closeIcon.classList.remove("hidden");
+      } else {
+        closeMobileMenu();
+      }
+    }
+
+    function closeMobileMenu() {
+      const menu = document.getElementById("mobile-menu");
+      const openIcon = document.getElementById("menu-icon-open");
+      const closeIcon = document.getElementById("menu-icon-close");
+      menu.classList.add("hidden");
+      openIcon.classList.remove("hidden");
+      closeIcon.classList.add("hidden");
+    }
+
+    // Close modal on backdrop click or Escape key
+    document.getElementById("product-modal").addEventListener("click", function (e) {
+      if (e.target === this) closeProductModal();
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && activeModalProduct) closeProductModal();
+    });
+
+    // Initialize default language (French) and WhatsApp links on load
+    window.addEventListener("DOMContentLoaded", function () {
+      document.getElementById("current-year").textContent = new Date().getFullYear();
+      setLanguage("fr");
+    });
+  </script>
+</body>
+</html>
