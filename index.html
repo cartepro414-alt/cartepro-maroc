@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#0A1B18">
+  <meta name="theme-color" content="#081614">
   <title>CartePro المغرب — هويتكم المهنية، بشكل مختلف | بطاقات NFC والملفات الرقمية</title>
   <meta name="description" content="بطاقات أعمال NFC مخصصة وملفات رقمية احترافية للمهنيين والشركات في المغرب (Essential 249 DH • Business VIP 399 DH • Signature 3D 599 DH). دفع لمرة واحدة مدى الحياة.">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230D2622'/%3E%3Cg transform='translate(6,13) rotate(-18 22 18)'%3E%3Crect x='4' y='6' width='34' height='22' rx='4' fill='%2316433B' stroke='%23E5C178' stroke-width='2.6'/%3E%3Crect x='9' y='13' width='8' height='6' rx='1.5' fill='%23E5C178'/%3E%3Cpath d='M18 19h10l4-4' stroke='%23E5C178' stroke-width='1.8' fill='none'/%3E%3C/g%3E%3Cpath d='M45 21c3 4 3 10 0 14M50 17c4.5 6 4.5 16 0 22' fill='none' stroke='%23E5C178' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="icon" type="image/png" href="logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -44,31 +44,28 @@
     .t-gold{background:linear-gradient(135deg,#FFF5DB,#E6C78A 50%,#C29648);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
     body.theme-ivory .t-gold{background:linear-gradient(135deg,#9C7125,#C99A42 50%,#875F1B);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 
-    /* 3D Brand Typography & Animations */
-    .logo-3d-text{font-family:"Plus Jakarta Sans",sans-serif;font-weight:900;letter-spacing:-.02em;line-height:1;display:inline-flex;align-items:baseline}
-    .logo-3d-text .cp-c{color:#F5F2EA;text-shadow:0 2px 0 #0B221E,0 4px 10px rgba(0,0,0,.55)}
-    .logo-3d-text .cp-p{background:linear-gradient(180deg,#FFF6D9 0%,#E5C178 48%,#A67A2E 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;filter:drop-shadow(0 2px 3px rgba(0,0,0,.5))}
-    .logo-3d-sub{font-size:9px;letter-spacing:.26em;color:#E0BD7A;font-weight:800;display:block;text-align:center;margin-top:2px;text-transform:uppercase}
+    /* Official Brand Logo */
+    .brand-logo{height:44px;width:auto;display:block;object-fit:contain;filter:drop-shadow(0 4px 10px rgba(0,0,0,.55))}
+    .ft-logo{height:52px;width:auto;display:block;object-fit:contain;margin-bottom:10px;filter:drop-shadow(0 4px 12px rgba(0,0,0,.6))}
+
+    /* Animations */
     .spot{position:relative;overflow:hidden;animation:aura 2.8s infinite ease-in-out}
     .spot::before{content:"";position:absolute;top:0;left:-120%;width:65%;height:100%;background:linear-gradient(110deg,transparent,rgba(255,255,255,.68),transparent);transform:skewX(-22deg);animation:sheen 3.2s infinite ease-in-out;pointer-events:none}
     @keyframes sheen{0%,42%{transform:translateX(0) skewX(-22deg)}72%,100%{transform:translateX(440%) skewX(-22deg)}}
     @keyframes aura{0%,100%{box-shadow:0 8px 24px rgba(224,189,122,.42),0 0 0 0 rgba(247,228,184,.55)}50%{box-shadow:0 12px 32px rgba(224,189,122,.72),0 0 0 6px rgba(247,228,184,0)}}
-    @keyframes float3d{0%,100%{transform:translateY(0) rotateY(-8deg) rotateX(4deg)}50%{transform:translateY(-8px) rotateY(8deg) rotateX(-3deg)}}
     @keyframes slideUp{from{transform:translateY(100%);opacity:.4}to{transform:translateY(0);opacity:1}}
     .pdot{width:8px;height:8px;border-radius:50%;background:#0A1B18;display:inline-block;animation:blink 1.5s infinite}
     @keyframes blink{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(1.25)}}
 
     /* Navbar */
     .nav{position:sticky;top:0;z-index:100;background:rgba(8,22,20,.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1.5px solid var(--bdr);box-shadow:0 8px 22px rgba(0,0,0,.4)}
-    .nav-in{max-width:1200px;margin:0 auto;padding:9px 18px;display:flex;align-items:center;justify-content:space-between;gap:10px}
-    .brand{display:inline-flex;align-items:center;gap:9px;text-decoration:none;direction:ltr;flex-shrink:0}
-    .brand-ico{width:40px;height:32px;filter:drop-shadow(0 4px 8px rgba(0,0,0,.55))}
-    .brand .logo-3d-text{font-size:21px}
+    .nav-in{max-width:1200px;margin:0 auto;padding:8px 18px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+    .brand{display:inline-flex;align-items:center;text-decoration:none;flex-shrink:0}
     .links{display:flex;align-items:center;gap:16px}
     .links a{color:#DCE8E5;text-decoration:none;font-size:13px;font-weight:700;white-space:nowrap;transition:color .2s}
     .links a:hover,.links a.hi{color:var(--gold-hi)}
     .acts{display:flex;align-items:center;gap:7px;flex-shrink:0}
-    .pill{display:inline-flex;align-items:center;justify-content:center;gap:5px;padding:6px 10px;border-radius:999px;background:rgba(224,189,122,.14);border:1px solid var(--bdr-hi);color:var(--gold-hi);font-size:11.5px;font-weight:700;cursor:pointer;font-family:inherit;white-space:nowrap;transition:.2s;text-decoration:none}
+    .pill{display:inline-flex;align-items:center;justify-content:center;gap:5px;padding:6px 11px;border-radius:999px;background:rgba(224,189,122,.14);border:1px solid var(--bdr-hi);color:var(--gold-hi);font-size:11.5px;font-weight:700;cursor:pointer;font-family:inherit;white-space:nowrap;transition:.2s;text-decoration:none}
     .pill:hover,.pill.active{background:var(--gold);color:#0A1B18}
     .pill svg,.btn svg,.dk-b svg,.f-ic svg,.sol-ic svg,.hw-qr-in svg{display:block;flex-shrink:0}
     .pill svg{width:14px;height:14px}
@@ -84,14 +81,13 @@
     .btn-e{background:linear-gradient(135deg,#1E4E47,#102D29);color:#fff;border:1.5px solid var(--gold-hi)}
     .btn-o{background:var(--sub);color:var(--txt);border:1.5px solid var(--bdr-hi)}
 
-    /* Hero + Q&A Sales Hook + 3D Interactive Stage */
+    /* Hero + Q&A Sales Hook + 3D Flip Card */
     .hero{padding:36px 0 42px;border-bottom:1.5px solid var(--bdr)}
     .hero-g{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:34px}
     .eb-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:12px}
     .eb-p{display:inline-flex;align-items:center;gap:7px;padding:5px 13px;border-radius:999px;background:linear-gradient(90deg,#143530,#20524A);border:1px solid var(--gold-hi);color:var(--gold-hi);font-size:11.5px;font-weight:800;white-space:nowrap}
     .eb-s{display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border-radius:999px;background:rgba(224,189,122,.14);border:1px solid var(--bdr);color:var(--txt);font-size:11.5px;font-weight:700}
 
-    /* Q&A Hook Card */
     .qa-hook{
       background:linear-gradient(145deg,rgba(22,58,52,.92),rgba(10,27,24,.96));
       border:1.5px solid var(--bdr-hi);border-radius:20px;padding:16px 18px;margin:0 0 16px;
@@ -107,7 +103,7 @@
     .ben-pill{display:inline-flex;align-items:center;gap:5px;padding:5px 11px;border-radius:999px;background:var(--sub);border:1px solid var(--bdr);font-size:11.8px;font-weight:800;color:var(--txt)}
     .cta-row{display:flex;flex-wrap:wrap;gap:9px}
 
-    /* 3D Centerpiece Stage (Toggle Card 3D / Logo 3D) */
+    /* 3D Card Stage */
     .flip-stage{perspective:1500px;display:flex;flex-direction:column;align-items:center}
     .stage-box{width:100%;max-width:430px;aspect-ratio:85.6/53.98;position:relative}
     .flipper{width:100%;height:100%;position:relative;transform-style:preserve-3d;transition:transform .85s cubic-bezier(.22,1,.36,1);cursor:pointer}
@@ -116,24 +112,13 @@
     .face.back{transform:rotateY(180deg)}
     .face img{width:100%;height:100%;object-fit:cover;display:block}
     .replica{width:100%;height:100%;background:#FAF7F0;color:#12332D;display:flex;align-items:center;justify-content:center;flex-direction:column;padding:18px;direction:ltr}
-
-    /* 3D Logo Pedestal View */
-    .logo-pedestal{
-      display:none;width:100%;height:100%;border-radius:20px;border:2px solid var(--gold-hi);
-      background:radial-gradient(circle at 50% 35%,rgba(224,189,122,.25),transparent 62%),linear-gradient(145deg,#12352F,#071614);
-      box-shadow:0 24px 54px rgba(0,0,0,.7),inset 0 1px 2px rgba(255,255,255,.22);
-      flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:18px;direction:ltr;perspective:900px;
-    }
-    .logo-pedestal.active{display:flex}
-    .pedestal-float{display:flex;flex-direction:column;align-items:center;animation:float3d 4.5s infinite ease-in-out;transform-style:preserve-3d}
-    .pedestal-shadow{width:120px;height:14px;border-radius:50%;background:radial-gradient(circle,rgba(0,0,0,.75),transparent 70%);margin-top:6px}
-    .stage-ctrls{margin-top:12px;display:flex;flex-wrap:wrap;justify-content:center;gap:7px}
+    .stage-ctrls{margin-top:12px;display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
 
     /* Trust Bar */
     .trust-bar{margin-top:26px;padding:12px 16px;border-radius:16px;background:rgba(224,189,122,.08);border:1px solid var(--bdr);display:flex;flex-wrap:wrap;justify-content:center;gap:16px;font-size:12.5px;font-weight:800;color:var(--txt2)}
     .trust-bar span b{color:var(--gold);margin-inline-end:5px}
 
-    /* MOBILE APP-STYLE 4-TILE HUB (Shown only on Mobile <= 992px) */
+    /* MOBILE APP-STYLE 4-TILE HUB */
     .mobile-hub{display:none;padding:14px 0 26px}
     .hub-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
     .hub-tile{
@@ -347,8 +332,7 @@
     }
     @media(max-width:640px){
       .nav-in{padding:8px 12px;gap:6px}
-      .brand .logo-3d-text{font-size:18px}
-      .brand-ico{width:34px;height:27px}
+      .brand-logo{height:34px}
       .pill .p-lbl{display:none}
       .lsw button{padding:4px 7px;font-size:10.5px}
     }
@@ -356,42 +340,10 @@
 </head>
 <body>
 
-<!-- SHARED 3D LOGO SVG DEFS -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <defs>
-    <linearGradient id="cpGold3d" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FFF7DC"/>
-      <stop offset="45%" stop-color="#E4BF76"/>
-      <stop offset="100%" stop-color="#9A7026"/>
-    </linearGradient>
-    <linearGradient id="cpEmer3d" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1E584E"/>
-      <stop offset="55%" stop-color="#0E302A"/>
-      <stop offset="100%" stop-color="#071916"/>
-    </linearGradient>
-    <g id="cp-logo-mark">
-      <g transform="translate(2,8) rotate(-20 26 20)">
-        <rect x="4" y="6" width="42" height="27" rx="5" fill="#061412" opacity=".5" transform="translate(2,3)"/>
-        <rect x="4" y="6" width="42" height="27" rx="5" fill="url(#cpEmer3d)" stroke="url(#cpGold3d)" stroke-width="2.6"/>
-        <path d="M5 13h40" stroke="url(#cpGold3d)" stroke-width="2.2" opacity=".9"/>
-        <rect x="10" y="18" width="9" height="7" rx="1.6" fill="url(#cpGold3d)"/>
-        <path d="M21 22h11l4-4M21 26h15" stroke="url(#cpGold3d)" stroke-width="1.6" stroke-linecap="round" fill="none"/>
-        <circle cx="37" cy="18" r="1.5" fill="#FFF7DC"/>
-        <circle cx="37" cy="26" r="1.5" fill="#FFF7DC"/>
-      </g>
-      <path d="M51 15c3.5 5 3.5 13 0 18M57 11c5 7 5 19 0 26M63 7c6.5 9.5 6.5 24.5 0 34" fill="none" stroke="url(#cpGold3d)" stroke-width="2.8" stroke-linecap="round"/>
-    </g>
-  </defs>
-</svg>
-
 <header class="nav">
   <div class="nav-in">
     <a href="#accueil" class="brand" aria-label="CartePro Maroc">
-      <svg class="brand-ico" viewBox="0 0 74 48"><use href="#cp-logo-mark"/></svg>
-      <div>
-        <span class="logo-3d-text"><span class="cp-c">Carte</span><span class="cp-p">Pro</span></span>
-        <span class="logo-3d-sub">MAROC • NFC 3D</span>
-      </div>
+      <img src="logo.png" alt="CartePro Maroc" class="brand-logo">
     </a>
     <nav class="links">
       <a href="#pricing" class="hi" data-i18n="nav_pricing"></a>
@@ -413,7 +365,7 @@
 </header>
 
 <main>
-  <!-- 1. HERO: 3D CARD + 3D LOGO STAGE + Q&A SALES HOOK -->
+  <!-- 1. HERO: REAL 3D CARD + Q&A SALES HOOK -->
   <section id="accueil" class="hero">
     <div class="ct">
       <div class="hero-g">
@@ -423,13 +375,11 @@
             <span class="eb-s" data-i18n="hero_life"></span>
           </div>
 
-          <!-- Q&A SALES HOOK -->
           <div class="qa-hook">
             <h1 class="qa-q"><span>🤔</span><span data-i18n="qa_q"></span></h1>
             <p class="qa-a" data-i18n-html="qa_a"></p>
           </div>
 
-          <!-- 4 COMPACT BENEFIT PILLS -->
           <div class="ben-pills">
             <span class="ben-pill">💰 <span data-i18n="bp1"></span></span>
             <span class="ben-pill">🌿 <span data-i18n="bp2"></span></span>
@@ -437,7 +387,6 @@
             <span class="ben-pill">🔄 <span data-i18n="bp4"></span></span>
           </div>
 
-          <!-- 3 DIRECT ACTION BUTTONS -->
           <div class="cta-row">
             <button type="button" class="btn btn-g spot btn-full" onclick="downloadVCard()"><span class="pdot"></span><span data-ico="vcard"></span><span data-i18n="cta_save"></span></button>
             <a href="https://wa.me/212669256706" target="_blank" rel="noopener" class="btn btn-e"><span data-ico="wa"></span><span>WhatsApp</span></a>
@@ -445,33 +394,22 @@
           </div>
         </div>
 
-        <!-- 3D STAGE (CARD RECTO/VERSO OR 3D LOGO PEDESTAL) -->
         <div class="flip-stage">
           <div class="stage-box">
             <div class="flipper" id="heroFlip" onclick="this.classList.toggle('flipped')">
               <div class="face">
                 <img src="recto.png" alt="Recto CartePro Maroc 3D" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='recto.jpg';}else{this.style.display='none';this.nextElementSibling.style.display='flex';}">
-                <div class="replica" style="display:none"><svg width="86" height="58" viewBox="0 0 74 48"><use href="#cp-logo-mark"/></svg><div class="logo-3d-text" style="font-size:28px;margin-top:8px"><span style="color:#12332D">Carte</span><span class="cp-p">Pro</span></div><div style="font-size:11px;font-weight:800;color:#12332D;letter-spacing:.2em">— MAROC —</div></div>
+                <div class="replica" style="display:none"><img src="logo.png" alt="CartePro Maroc" style="max-width:75%;height:auto"></div>
               </div>
               <div class="face back">
                 <img src="verso.png" alt="Verso CartePro Maroc QR" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='verso.jpg';}else{this.style.display='none';this.nextElementSibling.style.display='flex';}">
                 <div class="replica" style="display:none"><div style="font-size:20px;font-weight:900;color:#183A36">((( NFC )))</div><div style="font-size:11px;font-weight:700;margin-top:6px">Approchez votre téléphone • QR Code</div></div>
               </div>
             </div>
-
-            <div class="logo-pedestal" id="logoStage">
-              <div class="pedestal-float">
-                <svg width="110" height="72" viewBox="0 0 74 48" style="filter:drop-shadow(0 12px 20px rgba(0,0,0,.65))"><use href="#cp-logo-mark"/></svg>
-                <div class="logo-3d-text" style="font-size:32px;margin-top:4px"><span class="cp-c">Carte</span><span class="cp-p">Pro</span></div>
-                <span class="logo-3d-sub" style="font-size:10px">— MAROC • EDITION 3D —</span>
-              </div>
-              <div class="pedestal-shadow"></div>
-            </div>
           </div>
 
           <div class="stage-ctrls">
-            <button type="button" class="pill active" id="btnViewCard" onclick="setStageMode('card')">↻ <span data-i18n="btn_flip"></span></button>
-            <button type="button" class="pill" id="btnViewLogo" onclick="setStageMode('logo')">✦ <span data-i18n="btn_logo3d"></span></button>
+            <button type="button" class="pill active" onclick="document.getElementById('heroFlip').classList.toggle('flipped')">↻ <span data-i18n="btn_flip"></span></button>
             <button type="button" class="pill" onclick="openModal('qrModal')" data-i18n="btn_sqr"></button>
           </div>
         </div>
@@ -486,7 +424,7 @@
     </div>
   </section>
 
-  <!-- MOBILE APP-STYLE 4-TILE HUB (CLEAN, ZERO CLUTTER) -->
+  <!-- MOBILE APP-STYLE 4-TILE HUB -->
   <section class="mobile-hub" aria-label="Menu Interactif">
     <div class="ct">
       <div class="hub-grid">
@@ -515,7 +453,7 @@
 
   <div class="sheet-backdrop" id="sheetBackdrop" onclick="closeSheets()"></div>
 
-  <!-- SHEET 1: PRICING (HORIZONTAL SWIPE CARDS ON MOBILE, 3-COL ON DESKTOP) -->
+  <!-- SHEET 1: PRICING (HORIZONTAL SWIPE CARDS ON MOBILE) -->
   <div class="mobile-sheet" id="sheetPricing">
     <div class="sheet-bar"><span class="sheet-handle"></span><span class="sheet-title" data-i18n="hb1_t"></span><button type="button" class="sheet-close" onclick="closeSheets()">✕</button></div>
     <section id="pricing" class="sec">
@@ -779,10 +717,7 @@
   <div class="ct">
     <div class="ft-g">
       <div>
-        <div style="display:inline-flex;align-items:center;gap:9px;direction:ltr;margin-bottom:8px">
-          <svg width="36" height="28" viewBox="0 0 74 48"><use href="#cp-logo-mark"/></svg>
-          <span class="logo-3d-text" style="font-size:22px"><span class="cp-c">Carte</span><span class="cp-p">Pro</span></span>
-        </div>
+        <img src="logo.png" alt="CartePro Maroc" class="ft-logo">
         <p style="margin:0 0 8px;font-size:13.8px;color:#E0BD7A;font-style:italic" data-i18n="ft_sl"></p>
         <p style="margin:0;font-size:12.5px;line-height:1.7;color:#A9BEB9" data-i18n="ft_ds"></p>
       </div>
@@ -867,7 +802,7 @@ const T={
     qa_q:"شنو هي لاكارط NFC وكيفاش كتعوّض لاكارط فيزيت العادية؟",
     qa_a:"<strong>هي لاكارط فيزيت الذكية ديالك مدى الحياة:</strong> بحال ملي كتخلّص بالـ <strong>Sans Contact</strong> فـ لاكارط البنكية، غير كتقرّب <strong>CartePro</strong> لتيلفون الكليان، كيتسجّل عندو رقمك، واتساب، وموقعك فـ ثانية — بلا تطبيق وبلا ما تعاود تطبع الأوراق كل مرة.",
     bp1:"توفير المصاريف",bp2:"صديقة للبيئة",bp3:"هيبة واحترافية",bp4:"تحديث فوري",
-    cta_save:"احفظ جهة اتصال CartePro",btn_flip:"قلب البطاقة 3D",btn_logo3d:"اللوغو 3D",btn_sqr:"مشاركة QR",
+    cta_save:"احفظ جهة اتصال CartePro",btn_flip:"قلب البطاقة 3D",btn_sqr:"مشاركة QR",
     pt1:"دفعة واحدة مدى الحياة",pt2:"معاينة مجانية قبل الطباعة",pt_edit:"تعديل معلوماتك في أي وقت",pt4:"توصيل لجميع مدن المغرب",
     hb1_t:"العروض والأثمنة",hb1_s:"249 • 399 • 599 DH (اسحب للمقارنة)",
     hb2_t:"علاش أحسن من لاكارط فيزيت؟",hb2_s:"المقارنة + تقييمات 5★ + حاسبة التوفير",
@@ -907,7 +842,7 @@ const T={
     qa_q:"C'est quoi une carte NFC et comment remplace-t-elle la carte visite ?",
     qa_a:"<strong>C'est votre carte de visite intelligente à vie :</strong> comme le paiement <strong>Sans Contact</strong> de votre carte bancaire, approchez <strong>CartePro</strong> du smartphone de votre client — votre numéro, WhatsApp et profil s'enregistrent en 1 seconde, sans application et sans réimpression.",
     bp1:"Économique",bp2:"Écologique",bp3:"Image Prestige",bp4:"Modifiable à vie",
-    cta_save:"Enregistrer CartePro",btn_flip:"Retourner 3D",btn_logo3d:"Logo 3D",btn_sqr:"Partager QR",
+    cta_save:"Enregistrer CartePro",btn_flip:"Retourner 3D",btn_sqr:"Partager QR",
     pt1:"Paiement unique à vie",pt2:"Aperçu gratuit avant impression",pt_edit:"Modifiable à tout moment",pt4:"Livraison partout au Maroc",
     hb1_t:"Offres & Tarifs",hb1_s:"249 • 399 • 599 DH (Glisser)",
     hb2_t:"Pourquoi mieux que le papier ?",hb2_s:"Comparatif + Avis 5★ + Calculateur",
@@ -947,7 +882,7 @@ const T={
     qa_q:"What is an NFC card and how does it replace traditional business cards?",
     qa_a:"<strong>It is your lifetime smart business card:</strong> just like contactless <strong>Tap-to-Pay</strong> on your bank card, tap <strong>CartePro</strong> on any client's phone — your number, WhatsApp, and profile save in 1 second with no app and no reprinting.",
     bp1:"Cost-Saving",bp2:"Eco-Friendly",bp3:"Executive Prestige",bp4:"Live Updates",
-    cta_save:"Save CartePro Contact",btn_flip:"Flip 3D Card",btn_logo3d:"3D Logo",btn_sqr:"Share QR",
+    cta_save:"Save CartePro Contact",btn_flip:"Flip 3D Card",btn_sqr:"Share QR",
     pt1:"One-time lifetime payment",pt2:"Free preview before print",pt_edit:"Edit your info anytime",pt4:"Nationwide Morocco delivery",
     hb1_t:"Plans & Pricing",hb1_s:"249 • 399 • 599 DH (Swipe)",
     hb2_t:"Why Better Than Paper?",hb2_s:"Compare + 5★ Reviews + ROI",
@@ -998,21 +933,6 @@ function setLanguage(l){
 }
 function toggleTheme(){document.body.classList.toggle("theme-ivory");}
 
-/* 3D Stage Mode Switch (Card Flip vs 3D Logo Pedestal) */
-function setStageMode(mode){
-  const flip=document.getElementById("heroFlip"),logo=document.getElementById("logoStage");
-  const bCard=document.getElementById("btnViewCard"),bLogo=document.getElementById("btnViewLogo");
-  if(mode==="logo"){
-    flip.style.display="none";logo.classList.add("active");
-    bLogo.classList.add("active");bCard.classList.remove("active");
-  }else{
-    if(flip.style.display!=="none"){flip.classList.toggle("flipped");}
-    flip.style.display="block";logo.classList.remove("active");
-    bCard.classList.add("active");bLogo.classList.remove("active");
-  }
-}
-
-/* Mobile Bottom Sheets & Horizontal Snap Pricing Sync */
 function isMobile(){return window.innerWidth<=992;}
 function openSheet(id){
   if(!isMobile())return;
