@@ -6,10 +6,10 @@
   <meta name="theme-color" content="#081614">
   <title>CartePro المغرب — هويتكم المهنية، بشكل مختلف | بطاقات NFC والملفات الرقمية</title>
   <meta name="description" content="بطاقات أعمال NFC مخصصة وملفات رقمية احترافية للمهنيين والشركات في المغرب (Essential 249 DH • Business VIP 399 DH • Signature 3D 599 DH). دفع لمرة واحدة مدى الحياة.">
-  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B221E'/%3E%3Cg transform='translate(5,12) rotate(-20 22 18)'%3E%3Crect x='3' y='6' width='34' height='22' rx='4' fill='%2312453C' stroke='%23E5C178' stroke-width='2.6'/%3E%3Crect x='8' y='13' width='8' height='6' rx='1.5' fill='%23E5C178'/%3E%3Cpath d='M18 19h10l4-4' stroke='%23E5C178' stroke-width='1.8' fill='none'/%3E%3C/g%3E%3Cpath d='M45 20c3 4.5 3 11.5 0 16M50 16c4.5 6.5 4.5 17.5 0 24' fill='none' stroke='%23E5C178' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <style>
     :root{
       --bg:#081614;--bg2:#102925;--pan:linear-gradient(145deg,rgba(20,50,45,.95),rgba(9,24,21,.98));
@@ -44,23 +44,48 @@
     .t-gold{background:linear-gradient(135deg,#FFF5DB,#E6C78A 50%,#C29648);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
     body.theme-ivory .t-gold{background:linear-gradient(135deg,#9C7125,#C99A42 50%,#875F1B);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 
-    /* Official Brand Logo */
-    .brand-logo{height:44px;width:auto;display:block;object-fit:contain;filter:drop-shadow(0 4px 10px rgba(0,0,0,.55))}
-    .ft-logo{height:52px;width:auto;display:block;object-fit:contain;margin-bottom:10px;filter:drop-shadow(0 4px 12px rgba(0,0,0,.6))}
+    /* 3D Metallic Inline Brand Logo (Zero Background) */
+    .brand{display:inline-flex;align-items:center;gap:10px;text-decoration:none;direction:ltr;flex-shrink:0}
+    .brand-svg{width:48px;height:36px;filter:drop-shadow(0 5px 10px rgba(0,0,0,.65));transition:transform .25s}
+    .brand:hover .brand-svg{transform:translateY(-2px) rotate(-3deg)}
+    .brand-word{display:flex;flex-direction:column;align-items:center;line-height:1}
+    .brand-3d{font-family:"Plus Jakarta Sans",sans-serif;font-weight:900;font-size:22px;letter-spacing:-.025em;display:inline-flex;align-items:baseline}
+    .brand-3d .c-em{
+      color:#F5F2EA;
+      text-shadow:0 1px 0 #D8C79E,0 2px 0 #103A33,0 3px 0 #071E1A,0 5px 10px rgba(0,0,0,.65);
+    }
+    .brand-3d .c-go{
+      background:linear-gradient(180deg,#FFF8DF 0%,#E8C57B 46%,#A57828 100%);
+      -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+      filter:drop-shadow(0 2px 0 #5C4112) drop-shadow(0 4px 8px rgba(0,0,0,.6));
+    }
+    .brand-maroc{
+      display:flex;align-items:center;gap:6px;margin-top:3px;font-family:"Plus Jakarta Sans",sans-serif;
+      font-size:9.5px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:#F0D395;
+      text-shadow:0 2px 4px rgba(0,0,0,.7);
+    }
+    .brand-maroc::before,.brand-maroc::after{content:"";width:14px;height:1.5px;background:linear-gradient(90deg,transparent,#E5C178,transparent)}
 
     /* Animations */
     .spot{position:relative;overflow:hidden;animation:aura 2.8s infinite ease-in-out}
     .spot::before{content:"";position:absolute;top:0;left:-120%;width:65%;height:100%;background:linear-gradient(110deg,transparent,rgba(255,255,255,.68),transparent);transform:skewX(-22deg);animation:sheen 3.2s infinite ease-in-out;pointer-events:none}
     @keyframes sheen{0%,42%{transform:translateX(0) skewX(-22deg)}72%,100%{transform:translateX(440%) skewX(-22deg)}}
     @keyframes aura{0%,100%{box-shadow:0 8px 24px rgba(224,189,122,.42),0 0 0 0 rgba(247,228,184,.55)}50%{box-shadow:0 12px 32px rgba(224,189,122,.72),0 0 0 6px rgba(247,228,184,0)}}
+    @keyframes levitate{
+      0%,100%{transform:translateY(0) rotateX(3deg) rotateY(-4deg)}
+      50%{transform:translateY(-11px) rotateX(-2deg) rotateY(4deg)}
+    }
+    @keyframes shadowPulse{
+      0%,100%{transform:scale(1);opacity:.62}
+      50%{transform:scale(.86);opacity:.36}
+    }
     @keyframes slideUp{from{transform:translateY(100%);opacity:.4}to{transform:translateY(0);opacity:1}}
     .pdot{width:8px;height:8px;border-radius:50%;background:#0A1B18;display:inline-block;animation:blink 1.5s infinite}
     @keyframes blink{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(1.25)}}
 
     /* Navbar */
     .nav{position:sticky;top:0;z-index:100;background:rgba(8,22,20,.94);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1.5px solid var(--bdr);box-shadow:0 8px 22px rgba(0,0,0,.4)}
-    .nav-in{max-width:1200px;margin:0 auto;padding:8px 18px;display:flex;align-items:center;justify-content:space-between;gap:10px}
-    .brand{display:inline-flex;align-items:center;text-decoration:none;flex-shrink:0}
+    .nav-in{max-width:1200px;margin:0 auto;padding:9px 18px;display:flex;align-items:center;justify-content:space-between;gap:10px}
     .links{display:flex;align-items:center;gap:16px}
     .links a{color:#DCE8E5;text-decoration:none;font-size:13px;font-weight:700;white-space:nowrap;transition:color .2s}
     .links a:hover,.links a.hi{color:var(--gold-hi)}
@@ -81,7 +106,7 @@
     .btn-e{background:linear-gradient(135deg,#1E4E47,#102D29);color:#fff;border:1.5px solid var(--gold-hi)}
     .btn-o{background:var(--sub);color:var(--txt);border:1.5px solid var(--bdr-hi)}
 
-    /* Hero + Q&A Sales Hook + 3D Flip Card */
+    /* Hero + Q&A Sales Hook + Floating 3D Card */
     .hero{padding:36px 0 42px;border-bottom:1.5px solid var(--bdr)}
     .hero-g{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:34px}
     .eb-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:12px}
@@ -103,16 +128,35 @@
     .ben-pill{display:inline-flex;align-items:center;gap:5px;padding:5px 11px;border-radius:999px;background:var(--sub);border:1px solid var(--bdr);font-size:11.8px;font-weight:800;color:var(--txt)}
     .cta-row{display:flex;flex-wrap:wrap;gap:9px}
 
-    /* 3D Card Stage */
-    .flip-stage{perspective:1500px;display:flex;flex-direction:column;align-items:center}
-    .stage-box{width:100%;max-width:430px;aspect-ratio:85.6/53.98;position:relative}
+    /* Floating 3D Card Stage */
+    .flip-stage{perspective:1400px;display:flex;flex-direction:column;align-items:center}
+    .float-wrap{
+      width:100%;max-width:430px;aspect-ratio:85.6/53.98;position:relative;
+      transform-style:preserve-3d;animation:levitate 5.2s ease-in-out infinite;
+      transition:transform .18s ease-out;
+    }
+    .float-wrap.tilting{animation:none}
     .flipper{width:100%;height:100%;position:relative;transform-style:preserve-3d;transition:transform .85s cubic-bezier(.22,1,.36,1);cursor:pointer}
     .flipper.flipped{transform:rotateY(180deg)}
-    .face{position:absolute;inset:0;width:100%;height:100%;border-radius:18px;backface-visibility:hidden;-webkit-backface-visibility:hidden;overflow:hidden;border:2.5px solid var(--gold-hi);box-shadow:0 24px 54px rgba(0,0,0,.62),0 0 24px rgba(224,189,122,.24);background:#FAF7F0}
+    .face{
+      position:absolute;inset:0;width:100%;height:100%;border-radius:18px;
+      backface-visibility:hidden;-webkit-backface-visibility:hidden;overflow:hidden;
+      border:2.5px solid var(--gold-hi);
+      box-shadow:0 26px 56px rgba(0,0,0,.68),0 0 28px rgba(224,189,122,.28);background:#FAF7F0;
+    }
+    .face::after{
+      content:"";position:absolute;inset:0;pointer-events:none;
+      background:linear-gradient(125deg,rgba(255,255,255,.28) 0%,rgba(255,255,255,0) 42%,rgba(224,189,122,.14) 100%);
+    }
     .face.back{transform:rotateY(180deg)}
     .face img{width:100%;height:100%;object-fit:cover;display:block}
     .replica{width:100%;height:100%;background:#FAF7F0;color:#12332D;display:flex;align-items:center;justify-content:center;flex-direction:column;padding:18px;direction:ltr}
-    .stage-ctrls{margin-top:12px;display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
+    .card-ground-shadow{
+      width:74%;max-width:310px;height:18px;margin-top:14px;border-radius:50%;
+      background:radial-gradient(ellipse at center,rgba(0,0,0,.72) 0%,rgba(224,189,122,.16) 45%,transparent 75%);
+      filter:blur(4px);animation:shadowPulse 5.2s ease-in-out infinite;
+    }
+    .stage-ctrls{margin-top:10px;display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
 
     /* Trust Bar */
     .trust-bar{margin-top:26px;padding:12px 16px;border-radius:16px;background:rgba(224,189,122,.08);border:1px solid var(--bdr);display:flex;flex-wrap:wrap;justify-content:center;gap:16px;font-size:12.5px;font-weight:800;color:var(--txt2)}
@@ -275,7 +319,7 @@
       .hero{padding:14px 0 12px;border-bottom:none}
       .hero-g{grid-template-columns:1fr;gap:14px}
       .flip-stage{order:-1}
-      .stage-box{max-width:335px}
+      .float-wrap{max-width:330px}
       .eb-row,.ben-pills{justify-content:center}
       .eb-s{display:none}
       .qa-hook{padding:12px 14px;margin-bottom:10px}
@@ -332,7 +376,9 @@
     }
     @media(max-width:640px){
       .nav-in{padding:8px 12px;gap:6px}
-      .brand-logo{height:34px}
+      .brand-svg{width:38px;height:28px}
+      .brand-3d{font-size:18px}
+      .brand-maroc{font-size:8px}
       .pill .p-lbl{display:none}
       .lsw button{padding:4px 7px;font-size:10.5px}
     }
@@ -340,10 +386,42 @@
 </head>
 <body>
 
+<!-- 3D INLINE SVG LOGO DEFINITION (TRANSPARENT, METALLIC BEVEL) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="cpGold3d" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF9E3"/>
+      <stop offset="42%" stop-color="#E6C175"/>
+      <stop offset="100%" stop-color="#9A6E22"/>
+    </linearGradient>
+    <linearGradient id="cpEmer3d" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E6357"/>
+      <stop offset="52%" stop-color="#0E3830"/>
+      <stop offset="100%" stop-color="#061C18"/>
+    </linearGradient>
+    <g id="cp-brand-mark">
+      <g transform="translate(2,8) rotate(-22 26 20)">
+        <rect x="4" y="6" width="42" height="27" rx="5" fill="#030D0B" opacity=".55" transform="translate(2.5,3.5)"/>
+        <rect x="4" y="6" width="42" height="27" rx="5" fill="url(#cpEmer3d)" stroke="url(#cpGold3d)" stroke-width="2.8"/>
+        <path d="M5 13h40" stroke="url(#cpGold3d)" stroke-width="2.4"/>
+        <rect x="10" y="18" width="9.5" height="7" rx="1.6" fill="url(#cpGold3d)"/>
+        <path d="M21 22h11l4-4M21 26h15" stroke="url(#cpGold3d)" stroke-width="1.7" stroke-linecap="round" fill="none"/>
+        <circle cx="37" cy="18" r="1.6" fill="#FFF9E3"/>
+        <circle cx="37" cy="26" r="1.6" fill="#FFF9E3"/>
+      </g>
+      <path d="M51 15c3.5 5 3.5 13 0 18M57 11c5 7 5 19 0 26M63 7c6.5 9.5 6.5 24.5 0 34" fill="none" stroke="url(#cpGold3d)" stroke-width="2.9" stroke-linecap="round"/>
+    </g>
+  </defs>
+</svg>
+
 <header class="nav">
   <div class="nav-in">
     <a href="#accueil" class="brand" aria-label="CartePro Maroc">
-      <img src="logo.png" alt="CartePro Maroc" class="brand-logo">
+      <svg class="brand-svg" viewBox="0 0 74 48"><use href="#cp-brand-mark"/></svg>
+      <div class="brand-word">
+        <span class="brand-3d"><span class="c-em">Carte</span><span class="c-go">Pro</span></span>
+        <span class="brand-maroc">Maroc</span>
+      </div>
     </a>
     <nav class="links">
       <a href="#pricing" class="hi" data-i18n="nav_pricing"></a>
@@ -365,7 +443,7 @@
 </header>
 
 <main>
-  <!-- 1. HERO: REAL 3D CARD + Q&A SALES HOOK -->
+  <!-- 1. HERO: FLOATING 3D CARD + Q&A SALES HOOK -->
   <section id="accueil" class="hero">
     <div class="ct">
       <div class="hero-g">
@@ -395,11 +473,11 @@
         </div>
 
         <div class="flip-stage">
-          <div class="stage-box">
+          <div class="float-wrap" id="floatWrap">
             <div class="flipper" id="heroFlip" onclick="this.classList.toggle('flipped')">
               <div class="face">
                 <img src="recto.png" alt="Recto CartePro Maroc 3D" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='recto.jpg';}else{this.style.display='none';this.nextElementSibling.style.display='flex';}">
-                <div class="replica" style="display:none"><img src="logo.png" alt="CartePro Maroc" style="max-width:75%;height:auto"></div>
+                <div class="replica" style="display:none"><svg width="86" height="58" viewBox="0 0 74 48"><use href="#cp-brand-mark"/></svg></div>
               </div>
               <div class="face back">
                 <img src="verso.png" alt="Verso CartePro Maroc QR" onerror="if(!this.dataset.f){this.dataset.f=1;this.src='verso.jpg';}else{this.style.display='none';this.nextElementSibling.style.display='flex';}">
@@ -407,6 +485,7 @@
               </div>
             </div>
           </div>
+          <div class="card-ground-shadow"></div>
 
           <div class="stage-ctrls">
             <button type="button" class="pill active" onclick="document.getElementById('heroFlip').classList.toggle('flipped')">↻ <span data-i18n="btn_flip"></span></button>
@@ -468,7 +547,6 @@
         <span class="swipe-hint" data-i18n="swipe_hint"></span>
 
         <div class="p-grid" id="pricingCarousel">
-          <!-- TIER 1: ESSENTIAL 249 DH -->
           <article class="p-card t-ess" data-tier-card="0">
             <div>
               <div class="p-hd">
@@ -505,7 +583,6 @@
             </div>
           </article>
 
-          <!-- TIER 2: BUSINESS VIP 399 DH -->
           <article class="p-card t-vip" data-tier-card="1">
             <div class="pop-tag" data-i18n="t2_pop"></div>
             <div>
@@ -544,7 +621,6 @@
             </div>
           </article>
 
-          <!-- TIER 3: SIGNATURE 3D 599 DH -->
           <article class="p-card t-s3d" data-tier-card="2">
             <div class="pop-tag" data-i18n="t3_pop"></div>
             <div>
@@ -717,7 +793,13 @@
   <div class="ct">
     <div class="ft-g">
       <div>
-        <img src="logo.png" alt="CartePro Maroc" class="ft-logo">
+        <div class="brand" style="margin-bottom:10px">
+          <svg class="brand-svg" style="width:44px;height:33px" viewBox="0 0 74 48"><use href="#cp-brand-mark"/></svg>
+          <div class="brand-word">
+            <span class="brand-3d" style="font-size:21px"><span class="c-em">Carte</span><span class="c-go">Pro</span></span>
+            <span class="brand-maroc">Maroc</span>
+          </div>
+        </div>
         <p style="margin:0 0 8px;font-size:13.8px;color:#E0BD7A;font-style:italic" data-i18n="ft_sl"></p>
         <p style="margin:0;font-size:12.5px;line-height:1.7;color:#A9BEB9" data-i18n="ft_ds"></p>
       </div>
@@ -932,6 +1014,23 @@ function setLanguage(l){
   renderSectors();renderFaqs();calcRoi();
 }
 function toggleTheme(){document.body.classList.toggle("theme-ivory");}
+
+/* Interactive 3D Tilt on Mouse/Touch over Floating Card */
+const fWrap=document.getElementById("floatWrap");
+if(fWrap){
+  const tiltMove=(cx,cy)=>{
+    const r=fWrap.getBoundingClientRect();
+    const rx=((cy-r.top)/r.height-.5)*-16;
+    const ry=((cx-r.left)/r.width-.5)*18;
+    fWrap.classList.add("tilting");
+    fWrap.style.transform=`translateY(-6px) rotateX(${rx.toFixed(1)}deg) rotateY(${ry.toFixed(1)}deg)`;
+  };
+  const tiltReset=()=>{fWrap.classList.remove("tilting");fWrap.style.transform="";};
+  fWrap.addEventListener("mousemove",e=>tiltMove(e.clientX,e.clientY));
+  fWrap.addEventListener("mouseleave",tiltReset);
+  fWrap.addEventListener("touchmove",e=>{if(e.touches[0])tiltMove(e.touches[0].clientX,e.touches[0].clientY);},{passive:true});
+  fWrap.addEventListener("touchend",tiltReset);
+}
 
 function isMobile(){return window.innerWidth<=992;}
 function openSheet(id){
